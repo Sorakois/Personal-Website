@@ -1,0 +1,110 @@
+/* Core Containers */
+html{
+  font-family: 'TeXGyreAdventorRegular';
+  font-weight: 400;
+  font-style: normal;
+  font-size: 24px; 
+  font-variant: normal; 
+  line-height: 26.4px
+}
+
+body{
+  background-image: url('https://img.freepik.com/free-vector/hand-painted-watercolor-pastel-sky-background_23-2148902621.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+
+/* Core Classes */
+.flexible {
+  position: relative;
+  align-items: center;
+  display: flex;
+  flex-wrap: row wrap;
+  justify-content: center;
+  }
+
+.button {
+  background-color: #cbbaea;
+  border: black;
+  border-style: groove;
+  color: white;
+  padding: 5px 50px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  margin: 2px 2px;
+  cursor: pointer;
+  position: relative;
+}
+
+#header {
+  text-align: center;
+  display: inline;
+  }
+
+#main {
+  text-align: center;
+  display: inline;
+}
+
+#footer {
+  text-align: center;
+  display: inline;
+  }
+
+
+
+/* Item Specific IDs */
+#about_me_image {
+  display: flex;
+  text-align: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+ /* unvisited link */
+ a:link {
+  color: white;
+  text-decoration: none;
+}
+/* visited link */
+a:visited {
+  color: rgb(111, 136, 247);
+  text-decoration: none;
+}
+/* mouse over link */
+a:hover {
+  color: hotpink;
+  text-decoration: none;
+}
+
+/* selected link */
+a:active {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+} 
+
+/* about me (first page) */
+#about_me_image:hover{
+  transition-property: color;
+  transition-timing-function: ease-in-out;
+  transition-duration: 3s;
+  filter: invert(1);
+}
+
+.text_chunk{
+  background-color: rgb(198, 156, 236);
+  color: white;
+  box-shadow: 2px 2px 20px 23px #7fecad;
+  display: flex;
+  text-align: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  border-radius: 5%;
+}
