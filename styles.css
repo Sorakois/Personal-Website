@@ -37,6 +37,7 @@ body{
   align-items: center;
   display: flex;
   justify-content: center;
+  width:100%;
   }
 .button {
   flex-wrap: row wrap;
@@ -62,8 +63,7 @@ body{
   }
 #main {
   text-align: center;
-  display: flex;
-  align-items: flex-start;
+  display: inline-block;
 }
 #footer {
   text-align: center;
@@ -97,21 +97,17 @@ a:active {
 
 
 /*  About me (first page) */
-.main_container, #main{
-  padding-right: 10%;
+#banana {
+  padding: 2% 5% 1% 5%;
+  display:flex;
+  width: 300px;
+  height:auto;
+  position: static;
+  margin: 0 auto; 
+  justify-content: center;
 }
-#about_me_image {
-  text-align: center;
-  width: 50%;
-  float:left;
-  margin-left: auto;
-  margin-right: auto;
-  flex-shrink: 1;
-}
-#about_me_image:hover{
-  transition-property: color;
-  transition-timing-function: ease-in-out;
-  transition-duration: 3s;
+
+#banana:hover{
   filter: invert(1);
 }
 .text_chunk{
@@ -121,11 +117,8 @@ a:active {
   display: flex;
   text-align: center;
   display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
   border-radius: 5%;
-  flex-grow: 3;
+
 }
 .text_chunk, p{
   padding: 5px;
