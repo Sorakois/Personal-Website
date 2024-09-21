@@ -1,3 +1,11 @@
+/* Mobile stuff */
+@media only screen and (max-width: 620px) {
+  /* For mobile phones: */
+  .main_container {
+    width: 100%;
+  }
+}
+
 /* Core Containers */
 html{
   font-family: 'TeXGyreAdventorRegular';
@@ -5,28 +13,35 @@ html{
   font-style: normal;
   font-size: 24px; 
   font-variant: normal; 
-  line-height: 26.4px
+  line-height: 26.4px;
 }
 
 body{
-  background-image: url('https://img.freepik.com/free-vector/hand-painted-watercolor-pastel-sky-background_23-2148902621.jpg');
+  background-image: url(
+    'https://wallpaperaccess.com/full/8351171.gif'
+  );
   background-repeat: no-repeat;
-  background-size: cover;
+  background-color: rgb(81,72,205);
+  background-size:100%;  
 }
 
 
-
 /* Core Classes */
-.flexible {
-  position: relative;
+.top_buttons{
+  display:flex;
+  width:100%;
+  text-align: center;
+}
+.main_container {
+  position:relative;
   align-items: center;
   display: flex;
-  flex-wrap: row wrap;
   justify-content: center;
   }
-
 .button {
-  background-color: #cbbaea;
+  flex-wrap: row wrap;
+  flex-grow: 1;
+  background-color: #7e90f8;
   border: black;
   border-style: groove;
   color: white;
@@ -39,17 +54,17 @@ body{
   cursor: pointer;
   position: relative;
 }
-
-#header {
+#top {
   text-align: center;
   display: inline;
+  font-size: 20px;
+  padding: 10px;
   }
-
 #main {
   text-align: center;
-  display: inline;
+  display: flex;
+  align-items: flex-start;
 }
-
 #footer {
   text-align: center;
   display: inline;
@@ -57,15 +72,6 @@ body{
 
 
 
-/* Item Specific IDs */
-#about_me_image {
-  display: flex;
-  text-align: center;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
-}
  /* unvisited link */
  a:link {
   color: white;
@@ -73,33 +79,45 @@ body{
 }
 /* visited link */
 a:visited {
-  color: rgb(111, 136, 247);
+  color: rgb(228, 131, 41);
   text-decoration: none;
 }
 /* mouse over link */
 a:hover {
   color: hotpink;
   text-decoration: none;
+  cursor:grab;
 }
-
 /* selected link */
 a:active {
   color: rgb(0, 0, 0);
   text-decoration: none;
 } 
 
-/* about me (first page) */
+
+
+/*  About me (first page) */
+.main_container, #main{
+  padding-right: 10%;
+}
+#about_me_image {
+  text-align: center;
+  width: 50%;
+  float:left;
+  margin-left: auto;
+  margin-right: auto;
+  flex-shrink: 1;
+}
 #about_me_image:hover{
   transition-property: color;
   transition-timing-function: ease-in-out;
   transition-duration: 3s;
   filter: invert(1);
 }
-
 .text_chunk{
-  background-color: rgb(198, 156, 236);
+  background-color: #7e90f8;
   color: white;
-  box-shadow: 2px 2px 20px 23px #7fecad;
+  box-shadow: 2px 2px 20px 23px rgb(198, 156, 236);
   display: flex;
   text-align: center;
   display: block;
@@ -107,4 +125,64 @@ a:active {
   margin-right: auto;
   width: 50%;
   border-radius: 5%;
+  flex-grow: 3;
+}
+.text_chunk, p{
+  padding: 5px;
+}
+
+/* My Projects (second page) */
+.Nurture{
+  padding: 2% 5% 1% 5%;
+  align-items:stretch;
+  text-align: center;
+  display: flex;
+}
+#Nurture_PFP, img{
+  border-radius: 8px;
+  display: block;
+  width: 300px; 
+  height: auto;
+  margin-right: auto;
+}
+#Nurture_Text{
+  background-color: #7e90f8;
+  color: white;
+  box-shadow: 2px 2px 20px 23px rgb(198, 156, 236);
+  display: block;
+  text-align: center;
+  width: 60%;
+  border-radius: 15%;
+  margin-left:18px;
+
+}
+#embed, iframe{
+  height:300px;
+  flex-shrink: 1;
+}
+.Azalea{
+  padding: 2% 5% 1% 5%;
+  align-items:stretch;
+  text-align: center;
+  display: flex;
+}
+#Azalea_PFP, img{
+  border-radius: 8px;
+  display: block;
+  width: 300px; 
+  height: auto;
+  margin-right: auto;
+  flex-shrink: 2;
+}
+#Azalea_Text{
+  background-color: #7e90f8;
+  color: white;
+  box-shadow: 2px 2px 20px 23px rgb(198, 156, 236);
+  display: flex;
+  text-align: center;
+  display: block;
+  margin-left: auto;
+  width: 60%;
+  border-radius: 5%;
+  
 }
