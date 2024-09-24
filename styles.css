@@ -187,21 +187,15 @@ h1{
 }
 
 /* Mobile stuff */
-@media only screen and (max-width: 620px) {
+@media (max-width: 1080px) {
   body {
     font-size: 16px; /* Smaller font size for readability */
-    padding: 0; /* Remove default padding */
-    margin: 0; /* Remove default margins */
     overflow-x: hidden; /* Prevent horizontal scroll */
   }
-  .Azalea, .Nurture{
-    width: 50%;
+  #embed, #Nurture_Text, #Azalea_Text, #Azalea_PFP{
+    margin:10px 20px 10px 0px;
   }
-  .top_buttons{
-    width: 20%;
-    text-wrap:wrap;
-    text-align: center;
-    font-size: 1%;
+  h1{
+    font-size:32px;
   }
 }
-
