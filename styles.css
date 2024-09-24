@@ -16,6 +16,13 @@ body{
   background-color: rgb(81,72,205);
   background-size:100%;  
 }
+img{
+  -webkit-user-drag: none;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
 
 
 /* Core Classes */
