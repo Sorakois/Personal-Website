@@ -68,7 +68,9 @@ img{
   text-align: center;
   display: inline;
   }
-
+p{
+  margin:10px;
+}
 
 
  /* unvisited link */
@@ -184,6 +186,37 @@ h1{
   width: 75%;
   border-radius: 5%;
   
+}
+
+
+
+/* Contact Page */
+.contact{
+  display:flex;
+  
+}
+
+#contact_top{
+  display:flex;
+}
+
+#contact_body{
+  display:flex;
+}
+
+#contact_bot{
+  display:flex;
+}
+
+#github, #linkedin{
+  display:flex;
+  height:auto;
+  align-items: center;
+  margin: 0 auto; 
+  justify-content: center;
+}
+#linkedin_skylarbleau{
+  margin-right:10px;
 }
 
 /* Mobile stuff */
