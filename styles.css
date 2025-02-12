@@ -54,11 +54,26 @@ img{
   cursor: pointer;
   position: relative;
 }
+#about_me{
+  text-align: center;
+  font-size: 20px;
+  padding: 10px;
+  text-decoration: underline;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-decoration:underline;
+  color:white;
+  background-color: #4d66f5;
+  opacity: 0.9;
+}
 #top {
   text-align: center;
   display: inline;
   font-size: 20px;
   padding: 10px;
+  color:white;
+  text-decoration: underline;
   }
 #main {
   text-align: center;
@@ -149,7 +164,7 @@ h1{
   text-align: center;
   width: 75%;
   border-radius:5%;
-  margin-left:auto;
+  margin-left:2vw;
 }
 #Nurture_Info{
   padding:2px;
@@ -159,6 +174,7 @@ h1{
   height:325px;
   flex-shrink: 1;
   flex-direction: row;
+  width: 20vw;
 }
 .Azalea{
   padding: 2% 5% 1% 5%;
@@ -169,7 +185,7 @@ h1{
 #Azalea_PFP, img{
   border-radius: 8px;
   display: block;
-  width: 300px; 
+  width: 20vw; 
   height: auto;
   margin-right: auto;
   flex-shrink: 2;
@@ -182,7 +198,7 @@ h1{
   display: flex;
   text-align: center;
   display: block;
-  margin-left: auto;
+  margin-left: 2vh;
   width: 75%;
   border-radius: 5%;
   
@@ -192,12 +208,15 @@ h1{
 
 /* Contact Page */
 .contact{
-  display:flex;
-  
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 #contact_top{
   display:flex;
+  text-decoration:underline;
+  color:white
 }
 
 #contact_body{
@@ -208,15 +227,26 @@ h1{
   display:flex;
 }
 
-#github, #linkedin{
-  display:flex;
-  height:auto;
-  align-items: center;
-  margin: 0 auto; 
-  justify-content: center;
-}
+
 #linkedin_skylarbleau{
-  margin-right:10px;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px; 
+}
+#github, #linkedin, #youtube, #discord, #handshake{
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  opacity: 0.90;
+  background-color: #687cf1;
+  width: 20vw;
+  height: auto;
+}
+#github:hover, #linkedin:hover, #youtube:hover, #discord:hover, #handshake:hover{
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  opacity: 1;
 }
 
 /* Mobile stuff */
