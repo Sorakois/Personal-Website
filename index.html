@@ -26,8 +26,117 @@
     </nav>
   </header>
 
-  <!-- Evergreen Forest & Meadow Hero Banner -->
+  <!-- Anime-Esque Illustrated Meadow, Cumulus Sky & Evergreen Horizon Banner -->
   <section class="meadow-banner">
+    <svg class="anime-backdrop-svg" viewBox="0 0 1600 560" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <linearGradient id="animeSky" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0%" stop-color="#173b7a"/>
+          <stop offset="38%" stop-color="#2978b5"/>
+          <stop offset="72%" stop-color="#7dd3fc"/>
+          <stop offset="92%" stop-color="#d9f99d"/>
+          <stop offset="100%" stop-color="#fef08a"/>
+        </linearGradient>
+        <linearGradient id="sunRay" x1="0.8" y1="0" x2="0.2" y2="1">
+          <stop offset="0%" stop-color="#fef9c3" stop-opacity="0.48"/>
+          <stop offset="100%" stop-color="#a7f3d0" stop-opacity="0"/>
+        </linearGradient>
+        <linearGradient id="meadowFar" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0%" stop-color="#4ade80"/>
+          <stop offset="100%" stop-color="#15803d"/>
+        </linearGradient>
+        <linearGradient id="meadowMid" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0%" stop-color="#22c55e"/>
+          <stop offset="100%" stop-color="#065f46"/>
+        </linearGradient>
+        <linearGradient id="meadowNear" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0%" stop-color="#10b981"/>
+          <stop offset="100%" stop-color="#09110d"/>
+        </linearGradient>
+      </defs>
+
+      <!-- Sky Base -->
+      <rect width="1600" height="560" fill="url(#animeSky)"/>
+
+      <!-- Glowing Sun & Halo -->
+      <circle cx="1180" cy="140" r="95" fill="#fef9c3" opacity="0.35"/>
+      <circle cx="1180" cy="140" r="54" fill="#fffbeb" opacity="0.92"/>
+
+      <!-- Drifting Anime Cumulus Cloud Bank (Back) -->
+      <g class="cloud-drift-slow">
+        <g fill="#e0f2fe" opacity="0.75">
+          <circle cx="340" cy="230" r="78"/>
+          <circle cx="430" cy="205" r="96"/>
+          <circle cx="540" cy="220" r="82"/>
+          <circle cx="960" cy="195" r="88"/>
+          <circle cx="1070" cy="170" r="110"/>
+          <circle cx="1190" cy="195" r="92"/>
+          <circle cx="1290" cy="225" r="68"/>
+        </g>
+        <!-- Cloud Sunlit Tops -->
+        <g fill="#ffffff" opacity="0.96">
+          <circle cx="330" cy="215" r="68"/>
+          <circle cx="425" cy="188" r="88"/>
+          <circle cx="530" cy="205" r="72"/>
+          <circle cx="950" cy="180" r="76"/>
+          <circle cx="1065" cy="152" r="98"/>
+          <circle cx="1180" cy="178" r="82"/>
+          <circle cx="1280" cy="212" r="58"/>
+        </g>
+        <!-- Cloud Lavender-Blue Cel Shadows -->
+        <g fill="#93c5fd" opacity="0.45">
+          <ellipse cx="435" cy="255" rx="175" ry="28"/>
+          <ellipse cx="1115" cy="238" rx="225" ry="34"/>
+        </g>
+      </g>
+
+      <!-- Distant Atmospheric Mountain Range -->
+      <polygon points="0,390 240,210 510,390" fill="#2563eb" opacity="0.32"/>
+      <polygon points="360,390 690,175 1020,390" fill="#1d4ed8" opacity="0.35"/>
+      <polygon points="820,390 1160,185 1490,390" fill="#3b82f6" opacity="0.28"/>
+      <polygon points="1220,390 1460,220 1600,340 1600,390" fill="#1e40af" opacity="0.3"/>
+
+      <!-- Drifting Cloud Ribbons (Mid) -->
+      <g class="cloud-drift-fast" fill="#ffffff" opacity="0.65">
+        <rect x="180" y="130" width="160" height="10" rx="5"/>
+        <rect x="680" y="105" width="210" height="12" rx="6"/>
+        <rect x="1320" y="125" width="180" height="10" rx="5"/>
+      </g>
+
+      <!-- Diagonal Sunbeams (Komorebi) -->
+      <polygon points="1180,140 1280,140 940,560 720,560" fill="url(#sunRay)"/>
+      <polygon points="1180,140 1360,140 1290,560 1060,560" fill="url(#sunRay)"/>
+      <polygon points="1180,140 1120,140 620,560 440,560" fill="url(#sunRay)"/>
+
+      <!-- Sunlit Rolling Meadow Hills -->
+      <path d="M0,370 Q420,275 890,355 T1600,310 L1600,560 L0,560 Z" fill="url(#meadowFar)"/>
+      <path d="M0,415 Q520,335 1040,400 T1600,365 L1600,560 L0,560 Z" fill="url(#meadowMid)"/>
+
+      <!-- Evergreen Pine Tree Clusters Along the Meadow Ridge -->
+      <g fill="#064e3b" opacity="0.9">
+        <polygon points="780,320 758,385 802,385"/>
+        <polygon points="810,330 790,390 830,390"/>
+        <polygon points="1350,295 1322,375 1378,375"/>
+        <polygon points="1390,310 1365,382 1415,382"/>
+        <polygon points="1430,285 1400,375 1460,375"/>
+        <polygon points="1475,305 1450,382 1500,382"/>
+      </g>
+
+      <!-- Foreground Meadow & Sunlit Wildflower Dots -->
+      <path d="M0,465 Q640,405 1180,455 T1600,435 L1600,560 L0,560 Z" fill="url(#meadowNear)"/>
+      <g fill="#fef08a" opacity="0.85">
+        <circle cx="720" cy="455" r="3"/>
+        <circle cx="860" cy="442" r="2.5"/>
+        <circle cx="985" cy="468" r="3.5"/>
+        <circle cx="1120" cy="448" r="2.5"/>
+        <circle cx="1260" cy="462" r="3"/>
+        <circle cx="1410" cy="450" r="3.5"/>
+      </g>
+      <path d="M0,515 Q800,485 1600,518 L1600,560 L0,560 Z" fill="#09110d"/>
+    </svg>
+
+    <div class="meadow-scrim"></div>
+
     <div class="hero-inner">
       <div>
         <span class="kicker"><i class="fa-solid fa-tree"></i> Mason &amp; Cincinnati, OH</span>
@@ -38,7 +147,7 @@
 
         <div class="meta-strip">
           <span class="meta-item"><i class="fa-solid fa-microchip"></i> Software Developer Intern @ Siemens</span>
-          <span class="meta-item"><i class="fa-solid fa-graduation-cap"></i> UCincy ACCEND (GPA: 3.5)</span>
+          <span class="meta-item"><i class="fa-solid fa-graduation-cap"></i> UCincy ACCEND (Class of 2029)</span>
           <span class="meta-item"><i class="fa-solid fa-globe"></i> Creator of nurture.how &amp; Azalea</span>
         </div>
 
@@ -59,15 +168,10 @@
         <img src="meself.jpg" alt="Skylar Bleau" width="256" height="260">
         <div class="portrait-caption">
           <span>Skylar David Bleau</span>
-          <span>Class of 2028</span>
+          <span>Class of 2029</span>
         </div>
       </div>
     </div>
-
-    <!-- Layered SVG Pine & Meadow Horizon -->
-    <svg class="pine-divider" viewBox="0 0 1440 48" fill="none" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
-      <path d="M0 48L1440 48L1440 18C1280 38 1060 6 840 24C620 42 340 8 0 28L0 48Z" fill="#0a110d"/>
-    </svg>
   </section>
 
   <main class="container">
@@ -78,11 +182,11 @@
           <span class="kicker">Academic Background</span>
           <h2 class="section-title">Education — University of Cincinnati</h2>
         </div>
-        <span class="exp-date">Expected Graduation: May 2028 • GPA: 3.5</span>
+        <span class="exp-date">Expected Graduation: May 2029 • GPA: 3.5</span>
       </div>
 
       <div class="card">
-        <div class="card-photo-banner" style="background-image: url('https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=1400&q=80');"></div>
+        <div class="card-photo-banner"></div>
         <div class="edu-grid">
           <div>
             <h3 class="exp-role" style="margin-bottom: 10px;">ACCEND Accelerated Engineering Program</h3>
@@ -106,7 +210,7 @@
             </div>
             <div class="degree-box">
               <h4>Bachelor of Science (B.S.), Computer Science</h4>
-              <p>College of Engineering and Applied Science • GPA: 3.5</p>
+              <p>College of Engineering and Applied Science • Class of 2029 (GPA: 3.5)</p>
             </div>
           </div>
         </div>
@@ -201,7 +305,7 @@
 
       <div class="grid-2">
         <div class="card">
-          <div class="card-photo-banner" style="background-image: url('https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?auto=format&fit=crop&w=900&q=80');"></div>
+          <div class="card-photo-banner forest-scene"></div>
           <div style="display: flex; align-items: center; gap: 14px; margin-bottom: 12px;">
             <img src="Nurture_icon.png" alt="Nurture Icon" width="48" height="48" style="border-radius: 8px; border: 1px solid var(--border-strong);">
             <div>
@@ -221,7 +325,7 @@
         </div>
 
         <div class="card">
-          <div class="card-photo-banner" style="background-image: url('https://images.unsplash.com/photo-1511497584788-876760111969?auto=format&fit=crop&w=900&q=80');"></div>
+          <div class="card-photo-banner twilight-scene"></div>
           <div style="display: flex; align-items: center; gap: 14px; margin-bottom: 12px;">
             <img src="Azalea.PNG" alt="Azalea Bot" width="48" height="48" style="border-radius: 8px; object-fit: cover; border: 1px solid var(--border-strong);">
             <div>

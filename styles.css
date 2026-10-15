@@ -1,33 +1,33 @@
 /* ==========================================================================
    SKYLAR BLEAU — SOFTWARE ENGINEERING PORTFOLIO
-   Alpine Meadow & Evergreen Architectural Theme | Zero-Lag GPU Animations
+   Anime-Esque Illustrated Meadow & Evergreen Theme | Zero-Lag GPU Engine
    ========================================================================== */
 
 @import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap');
 
 :root {
-  /* Evergreen & Meadow Palette */
-  --bg-base: #0a110d;
-  --bg-surface: #101a14;
-  --bg-elevated: #16241c;
-  --bg-interactive: #1c2e24;
+  /* Evergreen & Cel-Shaded Meadow Palette */
+  --bg-base: #09110d;
+  --bg-surface: #0f1c15;
+  --bg-elevated: #15271d;
+  --bg-interactive: #1c3326;
 
   /* Borders & Dividers */
-  --border-subtle: #22352a;
-  --border-strong: #355442;
-  --border-accent: #528c69;
+  --border-subtle: #21382b;
+  --border-strong: #345844;
+  --border-accent: #569e74;
 
-  /* Natural Accents */
-  --meadow-green: #5fa87a;
-  --meadow-light: #8fd1a6;
-  --sunlit-sage: #cfe8d5;
-  --warm-amber: #d4a359;
-  --azalea-accent: #b39ddb;
+  /* Anime Sky & Meadow Accents */
+  --meadow-green: #58b37c;
+  --meadow-light: #8ee0ad;
+  --sunlit-sage: #d4f2de;
+  --sky-cyan: #7dd3fc;
+  --sun-gold: #fde68a;
 
   /* Typography */
-  --text-main: #f2f5f3;
-  --text-body: #b8c7be;
-  --text-muted: #7e9487;
+  --text-main: #f3f7f4;
+  --text-body: #bfd0c5;
+  --text-muted: #829c8c;
 
   /* Layout & Motion */
   --max-width: 1160px;
@@ -35,6 +35,19 @@
   --radius-md: 10px;
   --radius-lg: 14px;
   --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+
+  /* ========================================================================
+     ANIME-ESQUE ILLUSTRATED LANDSCAPE SCENES (Crisp 4K Vector Data URIs)
+     ======================================================================== */
+
+  /* Scene 1: Sunlit Alpine Meadow & Cumulus Sky (Education Card) */
+  --scene-alpine-meadow: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1200 320' preserveAspectRatio='xMidYMid slice'><defs><linearGradient id='sky1' x1='0' y1='0' x2='0' y2='1'><stop offset='0%' stop-color='%231d4ed8'/><stop offset='45%' stop-color='%2338bdf8'/><stop offset='82%' stop-color='%23bae6fd'/><stop offset='100%' stop-color='%23fef3c7'/></linearGradient><linearGradient id='hill1' x1='0' y1='0' x2='0' y2='1'><stop offset='0%' stop-color='%2334d399'/><stop offset='100%' stop-color='%23065f46'/></linearGradient><linearGradient id='hill2' x1='0' y1='0' x2='0' y2='1'><stop offset='0%' stop-color='%2310b981'/><stop offset='100%' stop-color='%23064e3b'/></linearGradient><linearGradient id='ray' x1='0' y1='0' x2='0.3' y2='1'><stop offset='0%' stop-color='%23fef9c3' stop-opacity='0.45'/><stop offset='100%' stop-color='%23fef9c3' stop-opacity='0'/></linearGradient></defs><rect width='1200' height='320' fill='url(%23sky1)'/><circle cx='920' cy='88' r='56' fill='%23fef08a' opacity='0.85'/><g fill='%23ffffff' opacity='0.92'><circle cx='240' cy='135' r='48'/><circle cx='295' cy='120' r='64'/><circle cx='365' cy='130' r='52'/><circle cx='420' cy='145' r='38'/><circle cx='760' cy='115' r='55'/><circle cx='830' cy='105' r='70'/><circle cx='910' cy='120' r='58'/><circle cx='980' cy='135' r='44'/></g><g fill='%23cbd5e1' opacity='0.55'><ellipse cx='320' cy='158' rx='125' ry='22'/><ellipse cx='860' cy='148' rx='145' ry='24'/></g><polygon points='0,230 190,115 390,230' fill='%233b82f6' opacity='0.35'/><polygon points='280,235 540,95 790,235' fill='%231e40af' opacity='0.32'/><polygon points='680,235 960,110 1200,235' fill='%232563eb' opacity='0.3'/><polygon points='840,0 980,0 1120,320 710,320' fill='url(%23ray)'/><polygon points='580,0 690,0 820,320 460,320' fill='url(%23ray)'/><path d='M0,215 Q320,145 680,205 T1200,175 L1200,320 L0,320 Z' fill='url(%23hill1)'/><path d='M0,245 Q420,190 820,235 T1200,210 L1200,320 L0,320 Z' fill='url(%23hill2)'/><path d='M0,278 Q600,240 1200,275 L1200,320 L0,320 Z' fill='%2309110d'/></svg>");
+
+  /* Scene 2: Sunbeams Through Ancient Forest Shrine (nurture.how Card) */
+  --scene-forest-sunbeams: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 900 280' preserveAspectRatio='xMidYMid slice'><defs><linearGradient id='fsky' x1='0' y1='0' x2='1' y2='1'><stop offset='0%' stop-color='%23064e3b'/><stop offset='50%' stop-color='%230d9488'/><stop offset='100%' stop-color='%23a7f3d0'/></linearGradient><linearGradient id='beam' x1='0' y1='0' x2='0.4' y2='1'><stop offset='0%' stop-color='%23fde68a' stop-opacity='0.5'/><stop offset='100%' stop-color='%236ee7b7' stop-opacity='0'/></linearGradient></defs><rect width='900' height='280' fill='url(%23fsky)'/><polygon points='120,0 240,0 440,280 260,280' fill='url(%23beam)'/><polygon points='380,0 520,0 720,280 510,280' fill='url(%23beam)'/><polygon points='640,0 740,0 900,280 760,280' fill='url(%23beam)'/><g fill='%23065f46' opacity='0.75'><polygon points='80,25 30,190 130,190'/><polygon points='210,45 155,210 265,210'/><polygon points='720,30 660,200 780,200'/><polygon points='830,50 775,215 885,215'/></g><path d='M0,185 Q240,135 510,180 T900,155 L900,280 L0,280 Z' fill='%23047857'/><path d='M0,220 Q360,175 680,215 T900,200 L900,280 L0,280 Z' fill='%23064e3b'/><g fill='%23fde047' opacity='0.85'><circle cx='220' cy='210' r='3'/><circle cx='340' cy='195' r='2.5'/><circle cx='490' cy='225' r='3.5'/><circle cx='610' cy='180' r='2.5'/><circle cx='740' cy='205' r='3'/></g><path d='M0,250 Q450,225 900,255 L900,280 L0,280 Z' fill='%2309110d'/></svg>");
+
+  /* Scene 3: Twilight Starlit Azalea Blossom Meadow (Azalea Card) */
+  --scene-twilight-meadow: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 900 280' preserveAspectRatio='xMidYMid slice'><defs><linearGradient id='tsky' x1='0' y1='0' x2='0' y2='1'><stop offset='0%' stop-color='%231e1b4b'/><stop offset='50%' stop-color='%233b0764'/><stop offset='85%' stop-color='%237e22ce'/><stop offset='100%' stop-color='%23f0abfc'/></linearGradient><linearGradient id='thill' x1='0' y1='0' x2='0' y2='1'><stop offset='0%' stop-color='%2334d399'/><stop offset='100%' stop-color='%23064e3b'/></linearGradient></defs><rect width='900' height='280' fill='url(%23tsky)'/><circle cx='730' cy='72' r='36' fill='%23fef9c3' opacity='0.92'/><circle cx='744' cy='64' r='30' fill='%232e1065'/><g fill='%23ffffff' opacity='0.8'><circle cx='140' cy='50' r='2'/><circle cx='280' cy='35' r='1.5'/><circle cx='420' cy='68' r='2.2'/><circle cx='560' cy='42' r='1.8'/><circle cx='820' cy='95' r='2'/></g><g fill='%23e9d5ff' opacity='0.35'><ellipse cx='260' cy='130' rx='130' ry='22'/><ellipse cx='640' cy='140' rx='150' ry='20'/></g><path d='M0,185 Q260,130 540,185 T900,155 L900,280 L0,280 Z' fill='%23115e59' opacity='0.85'/><path d='M0,215 Q380,175 720,218 T900,195 L900,280 L0,280 Z' fill='url(%23thill)'/><g fill='%23f472b6' opacity='0.9'><circle cx='180' cy='225' r='3.5'/><circle cx='290' cy='215' r='3'/><circle cx='460' cy='230' r='4'/><circle cx='630' cy='218' r='3'/><circle cx='780' cy='228' r='3.5'/></g><path d='M0,250 Q450,225 900,255 L900,280 L0,280 Z' fill='%2309110d'/></svg>");
 }
 
 *, *::before, *::after {
@@ -79,7 +92,7 @@ a {
   position: sticky;
   top: 0;
   z-index: 100;
-  background-color: rgba(10, 17, 13, 0.94);
+  background-color: rgba(9, 17, 13, 0.95);
   border-bottom: 1px solid var(--border-subtle);
 }
 
@@ -149,31 +162,56 @@ a {
 }
 
 /* ==========================================================================
-   MEADOW & PINE HERO BANNER
+   ANIME-ESQUE PAINTED MEADOW & PINE HERO BANNER
    ========================================================================== */
 .meadow-banner {
   position: relative;
   overflow: hidden;
   border-bottom: 1px solid var(--border-subtle);
-  background-color: var(--bg-surface);
-  background-image:
-    linear-gradient(180deg, rgba(10, 17, 13, 0.72) 0%, rgba(10, 17, 13, 0.88) 70%, #0a110d 100%),
-    url('https://images.unsplash.com/photo-1448375240586-882707db888b?auto=format&fit=crop&w=1800&q=80');
-  background-size: cover;
-  background-position: center 40%;
+  background-color: #0d2118;
 }
 
-.meadow-banner.subpage-banner {
-  background-image:
-    linear-gradient(180deg, rgba(10, 17, 13, 0.75) 0%, rgba(10, 17, 13, 0.95) 100%),
-    url('https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=1800&q=80');
-  background-position: center 55%;
+.anime-backdrop-svg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* Gentle GPU-Composited Cloud Drift (Zero CPU/Repaint Overhead) */
+.cloud-drift-slow {
+  will-change: transform;
+  animation: driftClouds 26s ease-in-out infinite alternate;
+}
+
+.cloud-drift-fast {
+  will-change: transform;
+  animation: driftClouds 18s ease-in-out infinite alternate-reverse;
+}
+
+@keyframes driftClouds {
+  0% { transform: translate3d(-18px, 0, 0); }
+  100% { transform: translate3d(18px, 0, 0); }
+}
+
+/* Readability Scrim Over Illustrated Landscape */
+.meadow-scrim {
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(90deg, rgba(9, 17, 13, 0.88) 0%, rgba(9, 17, 13, 0.68) 55%, rgba(9, 17, 13, 0.38) 100%),
+    linear-gradient(180deg, rgba(9, 17, 13, 0.25) 0%, rgba(9, 17, 13, 0.6) 75%, #09110d 100%);
+  pointer-events: none;
+  z-index: 1;
 }
 
 .hero-inner {
   max-width: var(--max-width);
   margin: 0 auto;
-  padding: 72px 24px 84px;
+  padding: 76px 24px 88px;
   display: grid;
   grid-template-columns: 1fr 280px;
   gap: 48px;
@@ -188,7 +226,7 @@ a {
   gap: 8px;
   font-family: 'JetBrains Mono', monospace;
   font-size: 0.78rem;
-  font-weight: 500;
+  font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.08em;
   color: var(--meadow-light);
@@ -203,17 +241,18 @@ a {
   letter-spacing: -0.02em;
   color: var(--text-main);
   margin-bottom: 18px;
+  text-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
 }
 
 .hero-lead {
-  font-size: 1.08rem;
-  color: var(--text-body);
+  font-size: 1.06rem;
+  color: #d6e4dc;
   max-width: 660px;
   margin-bottom: 28px;
 }
 
 .hero-lead strong {
-  color: var(--text-main);
+  color: #ffffff;
   font-weight: 600;
 }
 
@@ -229,7 +268,7 @@ a {
   align-items: center;
   gap: 8px;
   padding: 6px 12px;
-  background-color: rgba(16, 26, 20, 0.9);
+  background-color: rgba(15, 28, 21, 0.92);
   border: 1px solid var(--border-strong);
   border-radius: var(--radius-sm);
   font-size: 0.84rem;
@@ -265,7 +304,7 @@ a {
 
 .btn-primary {
   background-color: var(--meadow-green);
-  color: #06100a;
+  color: #051009;
   border: 1px solid var(--meadow-light);
 }
 
@@ -274,7 +313,7 @@ a {
 }
 
 .btn-outline {
-  background-color: rgba(16, 26, 20, 0.85);
+  background-color: rgba(15, 28, 21, 0.9);
   color: var(--text-main);
   border: 1px solid var(--border-strong);
 }
@@ -286,11 +325,11 @@ a {
 
 /* Portrait Card */
 .portrait-card {
-  background-color: var(--bg-surface);
+  background-color: rgba(15, 28, 21, 0.95);
   border: 1px solid var(--border-strong);
   border-radius: var(--radius-lg);
   padding: 12px;
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 20px 44px rgba(0, 0, 0, 0.55);
 }
 
 .portrait-card img {
@@ -307,19 +346,8 @@ a {
   align-items: center;
   font-family: 'JetBrains Mono', monospace;
   font-size: 0.76rem;
-  color: var(--text-body);
+  color: var(--sunlit-sage);
   padding: 0 4px;
-}
-
-/* SVG Pine & Meadow Horizon Divider */
-.pine-divider {
-  position: absolute;
-  bottom: -1px;
-  left: 0;
-  width: 100%;
-  height: 48px;
-  pointer-events: none;
-  z-index: 1;
 }
 
 /* ==========================================================================
@@ -364,7 +392,7 @@ a {
 }
 
 /* ==========================================================================
-   ARCHITECTURAL CARDS & NATURE PHOTOGRAPHY BANNERS
+   ARCHITECTURAL CARDS & ANIME LANDSCAPE BANNERS
    ========================================================================== */
 .grid-2 {
   display: grid;
@@ -393,20 +421,22 @@ a {
 }
 
 .card-photo-banner {
-  height: 150px;
+  height: 165px;
   margin: -28px -28px 22px -28px;
   border-radius: var(--radius-md) var(--radius-md) 0 0;
+  background-image: var(--scene-alpine-meadow);
   background-size: cover;
-  background-position: center;
+  background-position: center bottom;
   border-bottom: 1px solid var(--border-subtle);
   position: relative;
 }
 
-.card-photo-banner::after {
-  content: '';
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(180deg, rgba(16, 26, 20, 0.2) 0%, rgba(16, 26, 20, 0.85) 100%);
+.card-photo-banner.forest-scene {
+  background-image: var(--scene-forest-sunbeams);
+}
+
+.card-photo-banner.twilight-scene {
+  background-image: var(--scene-twilight-meadow);
 }
 
 /* Education Split Layout */
@@ -472,7 +502,7 @@ a {
 .exp-date {
   font-family: 'JetBrains Mono', monospace;
   font-size: 0.8rem;
-  color: var(--text-muted);
+  color: var(--sunlit-sage);
   background-color: var(--bg-base);
   border: 1px solid var(--border-subtle);
   padding: 4px 10px;
@@ -559,7 +589,7 @@ a {
 }
 
 /* ==========================================================================
-   AZALEA INTERACTIVE COMMAND SANDBOX (FIXED & HARDENED)
+   AZALEA INTERACTIVE COMMAND SANDBOX
    ========================================================================== */
 .sandbox-wrapper {
   background-color: var(--bg-surface);
@@ -617,7 +647,7 @@ a {
 }
 
 .sandbox-sidebar {
-  background-color: #0d1611;
+  background-color: #0b140f;
   border-right: 1px solid var(--border-subtle);
   padding: 16px;
   display: flex;
@@ -890,7 +920,7 @@ a {
 }
 
 /* ==========================================================================
-   GPU-ONLY SCROLL REVEAL & BREEZE ANIMATIONS
+   GPU-ONLY SCROLL REVEAL
    ========================================================================== */
 .reveal {
   opacity: 0;
@@ -903,22 +933,12 @@ a {
   transform: translate3d(0, 0, 0);
 }
 
-.sway-tree {
-  transform-origin: bottom center;
-  animation: gentleSway 7s ease-in-out infinite alternate;
-}
-
-@keyframes gentleSway {
-  0% { transform: rotate(-1.2deg); }
-  100% { transform: rotate(1.2deg); }
-}
-
 /* ==========================================================================
    FOOTER
    ========================================================================== */
 .site-footer {
   border-top: 1px solid var(--border-subtle);
-  background-color: #070d0a;
+  background-color: #060b08;
   padding: 36px 24px;
   text-align: center;
   font-size: 0.86rem;
