@@ -1,58 +1,159 @@
 <!DOCTYPE html>
-<html>
-    <header>
-        <!--Set page icon-->
-        <link rel="icon" type="image/x-icon" href="ascend1.ico">
-        <!--Buttons to navigate pages-->
-        <div class="top_buttons">
-            <button class="button" id="index"><a href = "index.html"><p>About Me</p></a></button>
-            <button class="button" id="projects"><a href = "projects.html"><p>My Projects</p></a></button>
-            <button class="button" id="contact" type="button" value="disabled" style="cursor: not-allowed" disabled><p>My Socials</p></button>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Connect | Skylar Bleau</title>
+  <link rel="icon" type="image/png" href="Nurture_icon.png">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+  <canvas id="firefly-canvas"></canvas>
+  <div class="ambient-orb orb-emerald"></div>
+  <div class="ambient-orb orb-azalea"></div>
+
+  <header class="navbar">
+    <nav class="nav-inner">
+      <a href="index.html" class="brand">
+        <img src="Nurture_icon.png" alt="Nurture Blossom Logo">
+        <span>Skylar Bleau<span class="brand-dot">.</span></span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html" class="nav-link">About &amp; Experience</a></li>
+        <li><a href="projects.html" class="nav-link">Projects</a></li>
+        <li><a href="contact.html" class="nav-link active">Socials &amp; Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container">
+    <div class="section-header reveal" style="text-align: center; max-width: 680px; margin: 28px auto 44px;">
+      <span class="eyebrow"><i class="fa-solid fa-paper-plane"></i> Let's Connect</span>
+      <h1 class="section-title">Reach Out Across the <span class="gradient-text">Canopy</span></h1>
+      <p style="color: var(--text-muted); margin-top: 12px;">
+        Open to AI &amp; software engineering collaborations, research discussions, and community partnerships.
+      </p>
+    </div>
+
+    <div class="social-grid reveal">
+      <!-- LinkedIn -->
+      <a href="https://www.linkedin.com/in/skylar-bleau" target="_blank" rel="noopener" class="glass-card social-card">
+        <div class="social-icon"><i class="fa-brands fa-linkedin-in"></i></div>
+        <div>
+          <h3 class="role-title">LinkedIn</h3>
+          <p style="color: var(--text-muted); font-size: 0.9rem;">/in/skylar-bleau</p>
         </div>
-        <!--Set title and import CSS-->
-        <title>Skylar Bleau</title>
-        <link href="styles.css" rel="stylesheet" type="text/css">
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+      </a>
 
-        <!--Mobile Friendly-->
-        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-    </header>
-
-    <body>
-        <div class = "contact" id="top">
-            <span id="about_me"><h1>Let's Connect!</h1></span>
+      <!-- GitHub -->
+      <a href="https://github.com/Sorakois" target="_blank" rel="noopener" class="glass-card social-card">
+        <div class="social-icon"><i class="fa-brands fa-github"></i></div>
+        <div>
+          <h3 class="role-title">GitHub</h3>
+          <p style="color: var(--text-muted); font-size: 0.9rem;">@Sorakois</p>
         </div>
+      </a>
 
-
-        <div id="linkedin_skylarbleau">
-            <!--Linkedin-->
-            <a href="https://www.linkedin.com/in/skylar-bleau"><button id = "linkedin" style="font-size:24px;color:white"><i class="fab fa-linkedin" 
-                    style="font-size: 128px;"></i></button></a>
-            <!--Github-->
-            <a href="https://github.com/Sorakois"><button id = "github" style="font-size:24px"><i class="fab fa-github" 
-                style="font-size:128px"></i></button></a>            
+      <!-- nurture.how -->
+      <a href="https://nurture.how" target="_blank" rel="noopener" class="glass-card social-card">
+        <div class="social-icon" style="color: var(--nurture-mint);"><i class="fa-solid fa-seedling"></i></div>
+        <div>
+          <h3 class="role-title">nurture.how</h3>
+          <p style="color: var(--text-muted); font-size: 0.9rem;">Community Web Platform</p>
         </div>
-        <div id="linkedin_skylarbleau">
-            <!--Youtube-->
-            <a href="https://www.youtube.com/@sorakoii"><button id = "youtube" style="font-size:24px"><i class="fab fa-youtube" 
-                style="font-size:128px;color:red"></i></button></a>
-            <!--Discord-->
-            <a href="https://discord.gg/nurture"><button id = "discord" style="font-size:24px"><i class='fab fa-discord' 
-                style='font-size:128px;color:white'></i></button></a>
-            <!--Handshake-->
-            <a href="https://uc.joinhandshake.com/profiles/ctnquc"><button id = "handshake" style="font-size:24px"><i class='fas fa-handshake' 
-                style='font-size:128px;color:limegreen'></i></button></a>
-            
+      </a>
+
+      <!-- Discord -->
+      <a href="https://discord.gg/nurture" target="_blank" rel="noopener" class="glass-card social-card">
+        <div class="social-icon" style="color: var(--azalea-lavender);"><i class="fa-brands fa-discord"></i></div>
+        <div>
+          <h3 class="role-title">Nurture Discord</h3>
+          <p style="color: var(--text-muted); font-size: 0.9rem;">discord.gg/nurture</p>
         </div>
+      </a>
 
-
-        <div class = "contact" id =contact_bot>
-            
-
+      <!-- YouTube -->
+      <a href="https://www.youtube.com/@sorakoii" target="_blank" rel="noopener" class="glass-card social-card">
+        <div class="social-icon" style="color: #f87171;"><i class="fa-brands fa-youtube"></i></div>
+        <div>
+          <h3 class="role-title">YouTube</h3>
+          <p style="color: var(--text-muted); font-size: 0.9rem;">@sorakoii (270K+ views)</p>
         </div>
-    </body>
+      </a>
 
-    <footer>
+      <!-- Handshake -->
+      <a href="https://uc.joinhandshake.com/profiles/ctnquc" target="_blank" rel="noopener" class="glass-card social-card">
+        <div class="social-icon" style="color: var(--sunlight-gold);"><i class="fa-solid fa-handshake"></i></div>
+        <div>
+          <h3 class="role-title">Handshake</h3>
+          <p style="color: var(--text-muted); font-size: 0.9rem;">UCincy Career Profile</p>
+        </div>
+      </a>
 
-    </footer>
+      <!-- Direct Email -->
+      <a href="mailto:bleausr@mail.uc.edu" class="glass-card social-card">
+        <div class="social-icon"><i class="fa-solid fa-envelope"></i></div>
+        <div>
+          <h3 class="role-title">University Email</h3>
+          <p style="color: var(--text-muted); font-size: 0.9rem;">bleausr@mail.uc.edu</p>
+        </div>
+      </a>
+
+      <!-- Resume -->
+      <a href="resume_skylarbleau.jpg" target="_blank" class="glass-card social-card">
+        <div class="social-icon" style="color: var(--azalea-pink);"><i class="fa-solid fa-file-arrow-down"></i></div>
+        <div>
+          <h3 class="role-title">Resume</h3>
+          <p style="color: var(--text-muted); font-size: 0.9rem;">View Full CV</p>
+        </div>
+      </a>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <p>© 2026 Skylar Bleau • Mason &amp; Cincinnati, OH</p>
+  </footer>
+
+  <script>
+    (() => {
+      document.querySelectorAll('.reveal').forEach(el => el.classList.add('visible'));
+      const canvas = document.getElementById('firefly-canvas');
+      const ctx = canvas.getContext('2d');
+      let width = canvas.width = window.innerWidth;
+      let height = canvas.height = window.innerHeight;
+      window.addEventListener('resize', () => {
+        width = canvas.width = window.innerWidth;
+        height = canvas.height = window.innerHeight;
+      }, { passive: true });
+
+      const particles = Array.from({ length: 24 }, (_, i) => ({
+        x: Math.random() * width,
+        y: Math.random() * height,
+        r: Math.random() * 2 + 1,
+        vx: (Math.random() - 0.5) * 0.3,
+        vy: -Math.random() * 0.35 - 0.1,
+        color: i % 2 === 0 ? 'rgba(110, 231, 183, 0.45)' : 'rgba(196, 181, 253, 0.45)'
+      }));
+
+      function animate() {
+        if (!document.hidden) {
+          ctx.clearRect(0, 0, width, height);
+          for (const p of particles) {
+            p.x += p.vx;
+            p.y += p.vy;
+            if (p.y < -10) p.y = height + 10;
+            ctx.beginPath();
+            ctx.arc(p.x, p.y, p.r, 0, Math.PI * 2);
+            ctx.fillStyle = p.color;
+            ctx.fill();
+          }
+        }
+        requestAnimationFrame(animate);
+      }
+      animate();
+    })();
+  </script>
+</body>
 </html>

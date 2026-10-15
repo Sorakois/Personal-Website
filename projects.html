@@ -1,73 +1,509 @@
 <!DOCTYPE html>
-<html>
-    <header>
-        <!--Set page icon-->
-        <link rel="icon" type="image/x-icon" href="ascend1.ico">
-        <!--Buttons to navigate pages-->
-        <div class="top_buttons">
-            <button class="button" id="index"><a href = "index.html"><p>About Me</p></a></button>
-            <button class="button" id="projects" type="button" value="disabled" style="cursor: not-allowed" disabled><p>My Projects</p></button>
-            <button class="button" id="contact"><a href = "contact.html"><p>My Socials</p></a></button>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects | Skylar Bleau</title>
+  <link rel="icon" type="image/png" href="Nurture_icon.png">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+  <canvas id="firefly-canvas"></canvas>
+  <div class="ambient-orb orb-emerald"></div>
+  <div class="ambient-orb orb-azalea"></div>
+
+  <header class="navbar">
+    <nav class="nav-inner">
+      <a href="index.html" class="brand">
+        <img src="Nurture_icon.png" alt="Nurture Blossom Logo">
+        <span>Skylar Bleau<span class="brand-dot">.</span></span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html" class="nav-link">About &amp; Experience</a></li>
+        <li><a href="projects.html" class="nav-link active">Projects</a></li>
+        <li><a href="contact.html" class="nav-link">Socials &amp; Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container">
+    <div class="section-header reveal" style="text-align: center; max-width: 740px; margin: 24px auto 56px;">
+      <span class="eyebrow"><i class="fa-solid fa-code-branch"></i> Portfolio Showcase</span>
+      <h1 class="section-title">Communities, Bots &amp; <span class="gradient-text">Full-Stack Platforms</span></h1>
+      <p style="color: var(--text-muted); margin-top: 12px;">
+        From full-stack web directories on <strong>nurture.how</strong> to custom-engineered Discord automation with <strong>Azalea</strong>.
+      </p>
+    </div>
+
+    <!-- PROJECT 1: NURTURE.HOW WEB PLATFORM -->
+    <section class="glass-card project-showcase reveal">
+      <div class="project-media">
+        <a href="https://nurture.how" target="_blank" rel="noopener">
+          <img src="Nurture_icon.png" alt="nurture.how Icon" class="project-avatar">
+        </a>
+        <div class="btn-group">
+          <a href="https://nurture.how" target="_blank" rel="noopener" class="btn btn-primary">
+            <i class="fa-solid fa-globe"></i> Visit nurture.how
+          </a>
         </div>
-        <!--Set title and import CSS-->
-        <title>Skylar Bleau</title>
-        <link href="styles.css" rel="stylesheet" type="text/css">
-        <!--Mobile Friendly-->
-        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-    </header>
+      </div>
 
-    <body>
-        <div class = "Nurture">
-            <!--Nurture Image-->
-            <!--<div id="Nurture_PFP">
-                <img src="Nurture_9+20+2024.png">
-            </div>-->
-            <!--Nurture Embed-->
-            <div>
-                <!--nurture iframe-->
-                <iframe id="embed" src="https://discord.com/widget?id=996903185685946490&theme=dark" 
-                width="350" height="500" allowtransparency="true" frameborder="0" 
-                sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
-            </div>
-            <!--Nurture Info-->
-            <div id = "Nurture_Text">
-                <h1><a href="https://www.discord.gg/nurture"><u><span style="color:rgb(160, 233, 178)">Nurture</span></a>, a community helping gamers!</h1></u>
-                <p id="Nurture_Info">
-                    Nurture is a community-focused server dedicated to helping players progress! Catering mainly towards 
-                    <span style="color:rgb(239, 197, 119)"><a href=https://www.cookierun-kingdom.com/en/">Cookie Run: Kingdom</a></span> 
-                    and <span style="color:rgb(44, 57, 153)"><a href="https://hsr.hoyoverse.com/en-us/">Honkai: Star Rail</a></span> players,
-                     Nurture offers personalized help with your issues, whether it be game-related or not. <br>
-                    <span style="font-size: larger; text-decoration: underline;">Nurture offers:</span>
-                    <br>
-                    <span style="color:rgb(217, 212, 212)">A safe and welcoming community; Tips! (There will be nothing you won't know once you're in our server!); 
-                    A great place to seek growth - whether it be in-game or anywhere else; Game Leaks; Public Voice Calls;
-                    Occasional giveaways; A supportive and growing community; ... and so much more! </span>
-                </p>
-            </div>
+      <div>
+        <span class="date-pill">Launched 2026 • Full-Stack Web Hub</span>
+        <h2 class="role-title" style="font-size: 1.85rem; margin: 10px 0;">
+          <a href="https://nurture.how" target="_blank" rel="noopener" class="gradient-text">nurture.how</a> — Gaming Directory &amp; Guide Platform
+        </h2>
+        <p style="color: var(--text-muted); margin-bottom: 16px;">
+          Designed and deployed <strong>nurture.how</strong> as the central web companion to the Nurture ecosystem. Built for speed and clean navigation, it hosts curated game directories, character build guides, and community resources.
+        </p>
+        <ul class="bullet-list">
+          <li>Engineered responsive front-end layouts with modern web standards and automated CI/CD deployments via GitHub and Vercel.</li>
+          <li>Bridges web visitors directly with live community tools, theorycrafting guides, and interactive utilities for <em>Honkai: Star Rail</em>, <em>Cookie Run: Kingdom</em>, and sandbox RPGs.</li>
+        </ul>
+        <div class="tag-row">
+          <span class="tech-tag">JavaScript / Node.js</span>
+          <span class="tech-tag">HTML5 &amp; CSS3</span>
+          <span class="tech-tag">Vercel CI/CD</span>
+          <span class="tech-tag">Full-Stack Architecture</span>
         </div>
+      </div>
+    </section>
 
-        <div class = "Azalea">
-            <!--Nurture Image-->
-            <div id="Azalea_PFP">
-                <a href="https://www.instagram.com/chizu_rii/"><img draggable="false" src="Azalea.PNG"></a>
-            </div>
-            <!--Nurture Info-->
-            <div id = "Azalea_Text">
-                <h1><u><span style="color:rgb(179,147,230)">Azalea</span>, Nurture's Discord Bot!</u></h1>
-                <p>
-                    Azalea brings knowledge and entertainment to Nurture. Users can look up information about any character in Cookie Run: Kingdom 
-                    or Honkai: Star Rail, do "gacha" to collect characters from Cookie Run: Kingdom, and so many more miscellaneous commands!
-                    Azalea is programmed entirely using <span style="color:rgb(252, 245, 44)"><u>Python</u></span>, but additionally uses <span style="color:rgb(8, 8, 8)"><u>SQL</u></span> 
-                    for things like keeping track of a user's inventory, and <span style="color:rgb(245, 160, 57)"><u>HTML</u></span> to scrape information off the web.
-                </p>
-            </div>
-    
-            </div>
+    <!-- PROJECT 2: AZALEA DISCORD BOT OVERVIEW -->
+    <section id="azalea" class="glass-card project-showcase reverse reveal">
+      <div>
+        <span class="date-pill">June 2022 – Present • Co-Architected Full-Stack Bot</span>
+        <h2 class="role-title" style="font-size: 1.85rem; margin: 10px 0; color: var(--azalea-lavender);">
+          Azalea — Nurture's Custom Discord Bot
+        </h2>
+        <p style="color: var(--text-muted); margin-bottom: 16px;">
+          Azalea brings interactive knowledge and entertainment to over 1,500 players. Users can look up real-time character builds for <em>Cookie Run: Kingdom</em> and <em>Honkai: Star Rail</em>, roll custom gacha pulls to collect characters, and track persistent inventories.
+        </p>
+        <ul class="bullet-list">
+          <li>Pioneered a dynamic visualizer powered by automated HTML web-scraping and asynchronous JavaScript requests to generate up-to-date character guides on demand.</li>
+          <li>Co-architected (with Thomas Griffin, UCF) a resilient Python backend integrated with a relational SQL database to manage user inventories, currency economies, and gacha collection states.</li>
+        </ul>
+        <div class="tag-row">
+          <span class="tech-tag lavender">Python</span>
+          <span class="tech-tag lavender">SQL Database</span>
+          <span class="tech-tag lavender">JavaScript (Async)</span>
+          <span class="tech-tag lavender">HTML Web Scraping</span>
+          <span class="tech-tag lavender">Discord API</span>
         </div>
+      </div>
 
-    </body>
+      <div class="project-media">
+        <a href="https://www.instagram.com/chizu_rii/" target="_blank" rel="noopener" title="Artwork by @chizu_rii">
+          <img src="Azalea.PNG" alt="Azalea Discord Bot" class="project-avatar" style="border-color: rgba(196, 181, 253, 0.5);">
+        </a>
+        <span style="font-size: 0.82rem; color: var(--text-muted);">Character art credit: @chizu_rii</span>
+      </div>
+    </section>
 
-    <footer>
+    <!-- INTERACTIVE AZALEA SLASH-COMMAND TERMINAL -->
+    <section class="glass-card simulator-card reveal" aria-label="Azalea Interactive Command Previewer">
+      <div class="sim-topbar">
+        <div class="sim-channel">
+          <i class="fa-solid fa-hashtag"></i>
+          <span>azalea-bot-sandbox</span>
+          <span style="color: var(--text-muted); font-size: 0.8rem;">| Interactive Live Preview</span>
+        </div>
+        <div class="sim-status">
+          <span class="status-dot"></span>
+          <span id="sim-version-badge">Azalea Engine v4.2 • SQL Connected</span>
+        </div>
+      </div>
 
-    </footer>
+      <div class="sim-body">
+        <!-- Left Sidebar: Category Filters & Dynamic Command List -->
+        <aside class="sim-sidebar">
+          <div class="sim-filter-row" id="sim-category-filters"></div>
+          <div class="sim-cmd-list" id="sim-command-list"></div>
+        </aside>
+
+        <!-- Right Viewport: Simulated Discord Output & Slash Input -->
+        <div class="sim-viewport">
+          <div class="sim-message-area" id="sim-output"></div>
+
+          <form class="sim-input-bar" id="sim-form" autocomplete="off">
+            <i class="fa-solid fa-terminal" style="color: var(--azalea-lavender);"></i>
+            <input 
+              type="text" 
+              id="sim-input" 
+              placeholder="Type a slash command (e.g., /gacha, /hsr, /crk, /inventory) and press Enter..."
+            >
+            <button type="submit" class="sim-action-btn">Run</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECT 3: NURTURE DISCORD COMMUNITY + LIVE WIDGET -->
+    <section class="glass-card project-showcase reveal">
+      <div class="project-media">
+        <iframe 
+          class="discord-frame"
+          src="https://discord.com/widget?id=996903185685946490&theme=dark" 
+          allowtransparency="true" 
+          frameborder="0" 
+          sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"
+          loading="lazy"
+          title="Nurture Discord Server Widget">
+        </iframe>
+      </div>
+
+      <div>
+        <span class="date-pill">1,500+ Members • 9-Person Volunteer Staff</span>
+        <h2 class="role-title" style="font-size: 1.85rem; margin: 10px 0;">
+          <a href="https://discord.gg/nurture" target="_blank" rel="noopener" style="color: var(--nurture-mint);">Nurture</a> — A Community Helping Gamers Grow
+        </h2>
+        <p style="color: var(--text-muted); margin-bottom: 16px;">
+          Founded in 2022, Nurture is a welcoming, high-engagement gaming community centered around 
+          <a href="https://www.cookierun-kingdom.com/en/" target="_blank" rel="noopener" style="color: var(--sunlight-gold); text-decoration: underline;">Cookie Run: Kingdom</a> and 
+          <a href="https://hsr.hoyoverse.com/en-us/" target="_blank" rel="noopener" style="color: var(--azalea-lavender); text-decoration: underline;">Honkai: Star Rail</a>.
+        </p>
+        <ul class="bullet-list">
+          <li>Directing a 9-person volunteer staff (5 moderators, 4 support specialists) to oversee community events, moderation, and personalized player coaching.</li>
+          <li>Features custom automated onboarding, live voice hangouts, game news feeds, giveaways, and direct integration with <strong>Azalea</strong> and <strong>nurture.how</strong>.</li>
+        </ul>
+        <div class="btn-group" style="margin-top: 22px;">
+          <a href="https://discord.gg/nurture" target="_blank" rel="noopener" class="btn btn-primary">
+            <i class="fa-brands fa-discord"></i> Join discord.gg/nurture
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© 2026 Skylar Bleau • <a href="https://nurture.how" style="color: var(--emerald-glow);">nurture.how</a> • <a href="https://discord.gg/nurture" style="color: var(--azalea-lavender);">discord.gg/nurture</a></p>
+  </footer>
+
+  <!-- ========================================================================
+       FUTURE-PROOF AZALEA COMMAND ENGINE + FIREFLY CANVAS
+       ======================================================================== -->
+  <script>
+    (() => {
+      /**
+       * FUTURE-PROOF CONFIGURATION:
+       * 1. To add a new command locally, simply add an entry to AZALEA_REGISTRY below.
+       * 2. Optional: Set REMOTE_COMMANDS_URL to a JSON file hosted on nurture.how
+       *    (e.g., 'https://nurture.how/api/azalea-commands.json') to update commands
+       *    automatically without touching this repository!
+       */
+      const REMOTE_COMMANDS_URL = null;
+
+      // Simulated session SQL state so /gacha pulls dynamically persist in /inventory
+      const sessionInventory = [
+        { name: 'Shadow Milk Cookie', rarity: 'Beast', count: 1 },
+        { name: 'Mystic Flour Cookie', rarity: 'Beast', count: 1 },
+        { name: 'Wind Archer Cookie', rarity: 'Legendary', count: 2 }
+      ];
+
+      const gachaPool = [
+        { name: 'Burning Spice Cookie', rarity: 'Beast (0.25%)', color: '#f43f5e', note: 'SQL Inventory Updated (+1 Soulstone Core)' },
+        { name: 'Awakened Dark Cacao Cookie', rarity: 'Ancient+ (0.6%)', color: '#c4b5fd', note: 'SQL Inventory Updated (+20 Soulprisms)' },
+        { name: 'Moonlight Cookie', rarity: 'Legendary (1.2%)', color: '#fcd34d', note: 'SQL Inventory Updated (+1 Character)' },
+        { name: 'Crème Brûlée Cookie', rarity: 'Epic (4.5%)', color: '#6ee7b7', note: 'SQL Inventory Updated (+1 Character)' },
+        { name: 'Financier Cookie', rarity: 'Epic (4.5%)', color: '#6ee7b7', note: 'SQL Inventory Updated (+1 Character)' }
+      ];
+
+      let AZALEA_REGISTRY = [
+        {
+          id: 'crk-build',
+          command: '/crk build',
+          args: 'cookie: Wind Archer',
+          category: 'Guides',
+          description: 'Scrapes & visualizes optimal CRK toppings & beascuits',
+          render: () => ({
+            title: '🏹 Wind Archer Cookie — Live Visualizer Guide',
+            color: '#6ee7b7',
+            desc: 'Data scraped & compiled via Azalea HTML/JS pipeline + nurture.how guide database.',
+            fields: [
+              { name: 'Best Toppings', value: '5x Searing Raspberry (ATK) or 5x Swift Chocolate' },
+              { name: 'Legendary Beascuit', value: '4x Wind DMG Bypass (25%+)' },
+              { name: 'Arena Meta Tier', value: 'SS+ ( Core Single-Target DPS )' },
+              { name: 'Data Source', value: 'Auto-Scraped & Verified' }
+            ],
+            footer: 'Azalea Visualizer • Powered by Python & HTML Web-Scraping'
+          })
+        },
+        {
+          id: 'hsr-guide',
+          command: '/hsr character',
+          args: 'unit: Trailblazer / DPS',
+          category: 'Guides',
+          description: 'Looks up Honkai: Star Rail relics, light cones & speed tuning',
+          render: () => ({
+            title: '🚄 Honkai: Star Rail — Character Build Lookup',
+            color: '#c4b5fd',
+            desc: 'Real-time relic stat thresholds, planar ornaments, and team synergies.',
+            fields: [
+              { name: 'Best Relic Set', value: '4pc Iron Cavalry / 4pc Scholar Lost in Erudition' },
+              { name: 'Speed Breakpoint', value: '134 / 160.1 SPD (MoC 12 Optimized)' },
+              { name: 'Priority Substats', value: 'CRIT Rate / CRIT DMG > SPD > ATK%' },
+              { name: 'Companion Guide', value: 'Synced with nurture.how/hsr' }
+            ],
+            footer: 'Azalea HSR Module • Async JS + Python Pipeline'
+          })
+        },
+        {
+          id: 'gacha-pull',
+          command: '/gacha pull',
+          args: 'banner: Kingdom Standard',
+          category: 'Gacha & SQL',
+          description: 'Roll a live Cookie Run: Kingdom gacha pull & save to SQL',
+          actionLabel: '🎲 Roll Another Pull',
+          render: () => {
+            const pull = gachaPool[Math.floor(Math.random() * gachaPool.length)];
+            const existing = sessionInventory.find(item => item.name === pull.name);
+            if (existing) {
+              existing.count += 1;
+            } else {
+              sessionInventory.unshift({ name: pull.name, rarity: pull.rarity.split(' ')[0], count: 1 });
+            }
+            return {
+              title: `✨ Gacha Pull Result: ${pull.name}!`,
+              color: pull.color,
+              desc: 'Youoven-baked a fresh Cookie! Check `/inventory` to see your updated SQL collection.',
+              fields: [
+                { name: 'Character Pulled', value: pull.name },
+                { name: 'Rarity Tier', value: pull.rarity },
+                { name: 'Database Transaction', value: pull.note },
+                { name: 'Session Total Unique', value: `${sessionInventory.length} Cookies Collected` }
+              ],
+              footer: 'Azalea Gacha Engine • Persistent SQL Inventory Commit'
+            };
+          }
+        },
+        {
+          id: 'inventory',
+          command: '/inventory view',
+          args: 'user: @Skylar',
+          category: 'Gacha & SQL',
+          description: 'Queries the relational SQL database for user collection',
+          render: () => ({
+            title: '🗄️ @Skylar\'s SQL Cookie Inventory',
+            color: '#fcd34d',
+            desc: 'Live query from `SELECT cookie_name, rarity, count FROM user_inventory WHERE user_id = ?`',
+            fields: sessionInventory.slice(0, 6).map(item => ({
+              name: `${item.rarity} Tier`,
+              value: `${item.name} (x${item.count})`
+            })),
+            footer: `Total Unique Entries: ${sessionInventory.length} • Roll /gacha to add more!`
+          })
+        },
+        {
+          id: 'architecture',
+          command: '/azalea status',
+          args: '--diagnostics',
+          category: 'System',
+          description: 'Displays bot tech stack, scraper latency & server stats',
+          render: () => ({
+            title: '🌸 Azalea System Diagnostics & Architecture',
+            color: '#a0e9b2',
+            desc: 'Co-architected by Skylar Bleau & Thomas Griffin to serve the 1,500+ member Nurture community.',
+            fields: [
+              { name: 'Core Runtime', value: 'Python 3 + Discord API' },
+              { name: 'Storage Layer', value: 'Relational SQL Database' },
+              { name: 'Ingestion Pipeline', value: 'Async JavaScript + HTML Web Scraping' },
+              { name: 'Web Companion', value: 'https://nurture.how' }
+            ],
+            footer: 'Uptime: 99.9% • Serving 1,500+ Members in discord.gg/nurture'
+          })
+        }
+      ];
+
+      // DOM Elements
+      const categoryContainer = document.getElementById('sim-category-filters');
+      const commandListContainer = document.getElementById('sim-command-list');
+      const outputContainer = document.getElementById('sim-output');
+      const form = document.getElementById('sim-form');
+      const input = document.getElementById('sim-input');
+
+      let activeCategory = 'All';
+      let activeCommandId = AZALEA_REGISTRY[0].id;
+
+      function getCategories() {
+        const cats = new Set(['All']);
+        AZALEA_REGISTRY.forEach(cmd => cats.add(cmd.category));
+        return Array.from(cats);
+      }
+
+      function renderFilters() {
+        categoryContainer.innerHTML = '';
+        getCategories().forEach(cat => {
+          const btn = document.createElement('button');
+          btn.type = 'button';
+          btn.className = `sim-filter-btn ${cat === activeCategory ? 'active' : ''}`;
+          btn.textContent = cat;
+          btn.addEventListener('click', () => {
+            activeCategory = cat;
+            renderFilters();
+            renderCommandList();
+          });
+          categoryContainer.appendChild(btn);
+        });
+      }
+
+      function renderCommandList() {
+        commandListContainer.innerHTML = '';
+        const filtered = activeCategory === 'All'
+          ? AZALEA_REGISTRY
+          : AZALEA_REGISTRY.filter(c => c.category === activeCategory);
+
+        filtered.forEach(cmd => {
+          const btn = document.createElement('button');
+          btn.type = 'button';
+          btn.className = `sim-cmd-btn ${cmd.id === activeCommandId ? 'active' : ''}`;
+          btn.innerHTML = `
+            <span class="sim-cmd-name">${cmd.command}</span>
+            <span class="sim-cmd-desc">${cmd.description}</span>
+          `;
+          btn.addEventListener('click', () => executeCommand(cmd.id));
+          commandListContainer.appendChild(btn);
+        });
+      }
+
+      function executeCommand(id) {
+        const cmd = AZALEA_REGISTRY.find(c => c.id === id) || AZALEA_REGISTRY[0];
+        activeCommandId = cmd.id;
+        renderCommandList();
+
+        const embed = typeof cmd.render === 'function' ? cmd.render() : cmd.embed;
+
+        const fieldsHtml = (embed.fields || []).map(f => `
+          <div class="embed-field">
+            <span class="field-name">${f.name}</span>
+            <span class="field-value">${f.value}</span>
+          </div>
+        `).join('');
+
+        const actionBtnHtml = cmd.actionLabel
+          ? `<button type="button" class="sim-action-btn" id="sim-rerun-btn">${cmd.actionLabel}</button>`
+          : '';
+
+        outputContainer.innerHTML = `
+          <div class="discord-msg">
+            <img src="Azalea.PNG" alt="Azalea Bot Avatar" class="discord-avatar">
+            <div class="discord-content">
+              <div class="discord-header">
+                <span class="discord-username">Azalea</span>
+                <span class="bot-tag">APP</span>
+                <span class="slash-pill">used ${cmd.command} ${cmd.args || ''}</span>
+              </div>
+              <div class="discord-embed" style="border-left-color: ${embed.color || '#c4b5fd'};">
+                <div class="embed-title">${embed.title}</div>
+                <div class="embed-desc">${embed.desc}</div>
+                <div class="embed-fields">${fieldsHtml}</div>
+                <div class="embed-footer">
+                  <span>${embed.footer}</span>
+                  ${actionBtnHtml}
+                </div>
+              </div>
+            </div>
+          </div>
+        `;
+
+        const rerunBtn = document.getElementById('sim-rerun-btn');
+        if (rerunBtn) {
+          rerunBtn.addEventListener('click', () => executeCommand(cmd.id));
+        }
+      }
+
+      // Allow typing slash commands in the input bar
+      form.addEventListener('submit', (e) => {
+        e.preventDefault();
+        const query = input.value.trim().toLowerCase();
+        if (!query) return;
+        const match = AZALEA_REGISTRY.find(c =>
+          c.command.toLowerCase().includes(query) ||
+          c.id.toLowerCase().includes(query) ||
+          c.category.toLowerCase().includes(query)
+        );
+        if (match) {
+          executeCommand(match.id);
+        } else {
+          executeCommand('gacha-pull');
+        }
+        input.value = '';
+      });
+
+      // Optional Remote JSON Sync for Zero-Code Future Updates
+      if (REMOTE_COMMANDS_URL) {
+        fetch(REMOTE_COMMANDS_URL)
+          .then(res => res.json())
+          .then(remoteCmds => {
+            if (Array.isArray(remoteCmds) && remoteCmds.length) {
+              AZALEA_REGISTRY = remoteCmds;
+              renderFilters();
+              renderCommandList();
+              executeCommand(AZALEA_REGISTRY[0].id);
+            }
+          })
+          .catch(() => {});
+      }
+
+      // Initialize Simulator
+      renderFilters();
+      renderCommandList();
+      executeCommand(AZALEA_REGISTRY[0].id);
+
+      // Scroll Reveal Observer
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+            observer.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.1 });
+      document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+      // GPU-Friendly Firefly Canvas
+      const canvas = document.getElementById('firefly-canvas');
+      const ctx = canvas.getContext('2d');
+      let width, height, particles = [];
+      function resize() {
+        width = canvas.width = window.innerWidth;
+        height = canvas.height = window.innerHeight;
+      }
+      window.addEventListener('resize', resize, { passive: true });
+      resize();
+
+      const colors = ['rgba(110, 231, 183, ', 'rgba(196, 181, 253, '];
+      for (let i = 0; i < 28; i++) {
+        particles.push({
+          x: Math.random() * width,
+          y: Math.random() * height,
+          r: Math.random() * 2.2 + 1,
+          vx: (Math.random() - 0.5) * 0.3,
+          vy: -Math.random() * 0.4 - 0.1,
+          alpha: Math.random() * 0.6 + 0.2,
+          color: colors[i % colors.length]
+        });
+      }
+      function animate() {
+        if (!document.hidden) {
+          ctx.clearRect(0, 0, width, height);
+          for (const p of particles) {
+            p.x += p.vx;
+            p.y += p.vy;
+            if (p.y < -10) p.y = height + 10;
+            if (p.x < -10) p.x = width + 10;
+            if (p.x > width + 10) p.x = -10;
+            ctx.beginPath();
+            ctx.arc(p.x, p.y, p.r, 0, Math.PI * 2);
+            ctx.fillStyle = p.color + p.alpha + ')';
+            ctx.fill();
+          }
+        }
+        requestAnimationFrame(animate);
+      }
+      animate();
+    })();
+  </script>
+</body>
 </html>

@@ -1,31 +1,312 @@
 <!DOCTYPE html>
-<html>
-    <header>
-        <!--Set page icon-->
-        <link rel="icon" type="image/x-icon" href="ascend1.ico">
-        <!--Buttons to navigate pages-->
-        <!--<div class="top_buttons">
-            <button class="button" id="index" type="button" value="disabled" style="cursor: not-allowed" disabled><p>About Me</p></button>
-            <button class="button" id="projects"><a href = "projects.html"><p>My Projects</p></a></button>
-            <button class="button" id="contact"><a href = "contact.html"><p>My Socials</p></a></button>
-        </div>-->
-        <!--Set title and import CSS-->
-        <title>Skylar Bleau</title>
-        <link href="styles.css" rel="stylesheet" type="text/css">
-        <!--Mobile Friendly-->
-        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-    </header>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Skylar Bleau | AI & Full-Stack Software Engineer</title>
+  <link rel="icon" type="image/png" href="Nurture_icon.png">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
 
-    <body>
-        <div>
-            <h1 style="text-align: center; padding-top: 35vh; color: blanchedalmond; font-size: 13vh;">Welcome!</h1>
-        </div>
-        <div>
-            <img draggable="false" style="align-content: center;display: block; margin: 0 auto; padding-top: 8vh;" src="Scroll_Down.gif">
-        </div>
-    </body>
+  <!-- GPU-Accelerated Bioluminescent Firefly Canvas -->
+  <canvas id="firefly-canvas"></canvas>
+  <div class="ambient-orb orb-emerald"></div>
+  <div class="ambient-orb orb-azalea"></div>
 
-    <!--<footer>
-        <h6>Join discord.gg/nurture</h6>
-    </footer>-->
+  <!-- Navigation -->
+  <header class="navbar">
+    <nav class="nav-inner">
+      <a href="index.html" class="brand">
+        <img src="Nurture_icon.png" alt="Nurture Blossom Logo">
+        <span>Skylar Bleau<span class="brand-dot">.</span></span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html" class="nav-link active">About &amp; Experience</a></li>
+        <li><a href="projects.html" class="nav-link">Projects</a></li>
+        <li><a href="contact.html" class="nav-link">Socials &amp; Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container">
+    <!-- Hero Section -->
+    <section class="hero reveal">
+      <div class="hero-content">
+        <span class="eyebrow"><i class="fa-solid fa-seedling"></i> Software Engineer &amp; AI Researcher</span>
+        <h1 class="hero-title">
+          Cultivating intelligent systems &amp; <span class="gradient-text">vibrant digital ecosystems.</span>
+        </h1>
+        <p class="hero-subtitle">
+          Hi, I'm <strong>Skylar Bleau</strong>—a Computer Science undergraduate and <strong>M.Eng. in Artificial Intelligence</strong> student in the <strong>ACCEND</strong> program at the <strong>University of Cincinnati</strong>, building full-stack platforms, AI workflows, and thriving gaming communities.
+        </p>
+
+        <div class="hero-badges">
+          <span class="pill-badge"><i class="fa-solid fa-microchip"></i> Siemens AI Co-op</span>
+          <span class="pill-badge"><i class="fa-solid fa-graduation-cap"></i> UCincy ACCEND (BS CS + MEng AI)</span>
+          <span class="pill-badge azalea-pill"><i class="fa-solid fa-wand-magic-sparkles"></i> Founder of nurture.how &amp; Azalea</span>
+        </div>
+
+        <div class="btn-group">
+          <a href="projects.html" class="btn btn-primary">
+            <i class="fa-solid fa-compass"></i> Explore My Ecosystem
+          </a>
+          <a href="resume_skylarbleau.jpg" target="_blank" class="btn btn-secondary">
+            <i class="fa-solid fa-file-lines"></i> View Resume
+          </a>
+          <a href="https://nurture.how" target="_blank" rel="noopener" class="btn btn-secondary">
+            <i class="fa-solid fa-arrow-up-right-from-square"></i> nurture.how
+          </a>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <div class="portrait-wrapper">
+          <img src="meself.jpg" alt="Skylar Bleau">
+        </div>
+        <div class="floating-stat stat-top">
+          <i class="fa-solid fa-brain" style="color: var(--emerald-glow);"></i> M.Eng. AI + B.S. CS
+        </div>
+        <div class="floating-stat stat-bottom">
+          <i class="fa-brands fa-discord" style="color: var(--azalea-lavender);"></i> 1,500+ Community Members
+        </div>
+      </div>
+    </section>
+
+    <!-- Education / UCincy ACCEND Spotlight -->
+    <section class="section reveal">
+      <div class="section-header">
+        <span class="eyebrow"><i class="fa-solid fa-building-columns"></i> Education</span>
+        <h2 class="section-title">University of Cincinnati <span class="gradient-text">ACCEND Program</span></h2>
+      </div>
+
+      <div class="glass-card accend-card">
+        <div class="accend-grid">
+          <div>
+            <span class="date-pill">Graduating May 2028 • GPA: 3.5</span>
+            <h3 style="font-family: 'Outfit', sans-serif; font-size: 1.65rem; margin: 12px 0;">
+              Accelerated Dual-Degree Engineering Track
+            </h3>
+            <p style="color: var(--text-muted); margin-bottom: 18px;">
+              Selected for UC's accelerated <strong>ACCEND</strong> program, simultaneously completing undergraduate computer science foundations alongside graduate-level artificial intelligence research and engineering coursework.
+            </p>
+            <div class="tag-row">
+              <span class="tech-tag">Data Structures</span>
+              <span class="tech-tag">Discrete Structures</span>
+              <span class="tech-tag">Differential Equations</span>
+              <span class="tech-tag">Graph Neural Networks</span>
+              <span class="tech-tag">Info Security &amp; Assurance</span>
+              <span class="tech-tag">Python &amp; C++</span>
+            </div>
+          </div>
+
+          <div class="degree-track">
+            <div class="degree-item meng">
+              <h4><i class="fa-solid fa-robot" style="color: var(--azalea-lavender);"></i> Master of Engineering (M.Eng.)</h4>
+              <p>Artificial Intelligence • Machine Learning &amp; Neural Architectures</p>
+            </div>
+            <div class="degree-item">
+              <h4><i class="fa-solid fa-laptop-code" style="color: var(--emerald-glow);"></i> Bachelor of Science (B.S.)</h4>
+              <p>Computer Science • College of Engineering and Applied Science</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience & Internships Timeline -->
+    <section class="section reveal">
+      <div class="section-header">
+        <span class="eyebrow"><i class="fa-solid fa-briefcase"></i> Experience &amp; Internships</span>
+        <h2 class="section-title">Engineering in the <span class="gradient-text">Real World</span></h2>
+      </div>
+
+      <div class="timeline">
+        <!-- Siemens -->
+        <div class="glass-card timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-header">
+            <div>
+              <h3 class="role-title">Software Developer Intern (Co-op)</h3>
+              <span class="company-name">Siemens — Tech &amp; Innovation Team</span>
+            </div>
+            <span class="date-pill">Sept 2026 – Present</span>
+          </div>
+          <ul class="bullet-list">
+            <li>Researching and architecting AI applications utilizing Graph Neural Networks (GNNs) to verify and optimize LLM task planning workflows.</li>
+            <li>Building scalable Python and PyTorch evaluation pipelines within Linux/WSL development environments.</li>
+          </ul>
+          <div class="tag-row">
+            <span class="tech-tag">Python</span>
+            <span class="tech-tag">PyTorch</span>
+            <span class="tech-tag">Graph Neural Networks (GNNs)</span>
+            <span class="tech-tag">LLM Task Planning</span>
+          </div>
+        </div>
+
+        <!-- SlingingJokes -->
+        <div class="glass-card timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-header">
+            <div>
+              <h3 class="role-title">Junior iOS App Developer Intern</h3>
+              <span class="company-name">SlingingJokes</span>
+            </div>
+            <span class="date-pill">May 2025 – Aug 2025</span>
+          </div>
+          <ul class="bullet-list">
+            <li>Architected and developed the company's iOS application using Flutter and Dart with a comprehensive Firebase backend (Firestore, Storage, Auth) for real-time user data and media hosting.</li>
+            <li>Engineered a dynamic video feed with custom UI/UX elements and integrated a multi-provider authentication system (Google, Apple, Email) with persistent user sessions.</li>
+          </ul>
+          <div class="tag-row">
+            <span class="tech-tag">Flutter</span>
+            <span class="tech-tag">Dart</span>
+            <span class="tech-tag">Firebase</span>
+            <span class="tech-tag">iOS Development</span>
+          </div>
+        </div>
+
+        <!-- Target & Content Creation -->
+        <div class="glass-card timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-header">
+            <div>
+              <h3 class="role-title">Technology Specialist &amp; Gaming Content Creator</h3>
+              <span class="company-name">Target &amp; YouTube (@Sorakoii)</span>
+            </div>
+            <span class="date-pill">2023 – 2026</span>
+          </div>
+          <ul class="bullet-list">
+            <li><strong>Target Tech Member:</strong> Advised guests on computer hardware, mobile devices, and gaming system specifications while diagnosing and troubleshooting device functionality in a fast-paced environment.</li>
+            <li><strong>YouTube Creator ("Sorakoii"):</strong> Produced analytical game guides for <em>Cookie Run: Kingdom</em> and <em>Honkai: Star Rail</em>, accumulating over <strong>270,000+ views</strong> across the channel.</li>
+          </ul>
+          <div class="tag-row">
+            <span class="tech-tag lavender">Hardware Diagnostics</span>
+            <span class="tech-tag lavender">Technical Communication</span>
+            <span class="tech-tag lavender">270K+ Video Views</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Projects Preview -->
+    <section class="section reveal">
+      <div class="section-header">
+        <span class="eyebrow"><i class="fa-solid fa-leaf"></i> Featured Ecosystems</span>
+        <h2 class="section-title">Flagship <span class="gradient-text">Projects</span></h2>
+      </div>
+
+      <div class="grid-2">
+        <div class="glass-card">
+          <div style="display: flex; align-items: center; gap: 16px; margin-bottom: 16px;">
+            <img src="Nurture_icon.png" alt="Nurture Icon" style="width: 56px; height: 56px; border-radius: 14px;">
+            <div>
+              <h3 class="role-title">nurture.how &amp; Nurture Community</h3>
+              <span class="company-name">Full-Stack Web Platform &amp; 1,500+ Member Hub</span>
+            </div>
+          </div>
+          <p style="color: var(--text-muted); margin-bottom: 18px;">
+            A modern web hub deployed on Vercel hosting interactive game directories, tier lists, and community guides alongside a 9-person staff moderating a 1,500+ member Discord community.
+          </p>
+          <div class="btn-group">
+            <a href="https://nurture.how" target="_blank" rel="noopener" class="btn btn-primary" style="padding: 9px 18px; font-size: 0.88rem;">
+              Launch nurture.how <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </a>
+            <a href="projects.html" class="btn btn-secondary" style="padding: 9px 18px; font-size: 0.88rem;">
+              Read Case Study
+            </a>
+          </div>
+        </div>
+
+        <div class="glass-card">
+          <div style="display: flex; align-items: center; gap: 16px; margin-bottom: 16px;">
+            <img src="Azalea.PNG" alt="Azalea Bot Icon" style="width: 56px; height: 56px; border-radius: 14px; object-fit: cover;">
+            <div>
+              <h3 class="role-title" style="color: var(--azalea-lavender);">Azalea Discord Bot</h3>
+              <span class="company-name" style="color: var(--azalea-pink);">Python • SQL • Web-Scraping • JS</span>
+            </div>
+          </div>
+          <p style="color: var(--text-muted); margin-bottom: 18px;">
+            Full-stack custom Discord bot powering Nurture with automated web-scraping visualizers, character encyclopedias, and SQL-backed gacha inventory systems for <em>Cookie Run: Kingdom</em> and <em>Honkai: Star Rail</em>.
+          </p>
+          <div class="btn-group">
+            <a href="projects.html#azalea" class="btn btn-secondary" style="padding: 9px 18px; font-size: 0.88rem;">
+              Explore Azalea Architecture <i class="fa-solid fa-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© 2026 Skylar Bleau • Crafted with zero-lag GPU animations • <a href="https://nurture.how" style="color: var(--emerald-glow);">nurture.how</a></p>
+  </footer>
+
+  <!-- Lightweight Firefly Canvas & Scroll Reveal Script -->
+  <script>
+    (() => {
+      // Scroll Reveal via IntersectionObserver
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+            observer.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.12 });
+
+      document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+      // Lightweight GPU-friendly Firefly & Petal Canvas (Max 32 particles)
+      const canvas = document.getElementById('firefly-canvas');
+      const ctx = canvas.getContext('2d');
+      let width, height, particles = [];
+
+      function resize() {
+        width = canvas.width = window.innerWidth;
+        height = canvas.height = window.innerHeight;
+      }
+      window.addEventListener('resize', resize, { passive: true });
+      resize();
+
+      const colors = ['rgba(110, 231, 183, ', 'rgba(160, 233, 178, ', 'rgba(196, 181, 253, '];
+      for (let i = 0; i < 32; i++) {
+        particles.push({
+          x: Math.random() * width,
+          y: Math.random() * height,
+          r: Math.random() * 2.4 + 1,
+          vx: (Math.random() - 0.5) * 0.35,
+          vy: -Math.random() * 0.45 - 0.1,
+          alpha: Math.random() * 0.65 + 0.15,
+          dAlpha: (Math.random() * 0.008) + 0.002,
+          color: colors[i % colors.length]
+        });
+      }
+
+      function animate() {
+        if (!document.hidden) {
+          ctx.clearRect(0, 0, width, height);
+          for (const p of particles) {
+            p.x += p.vx;
+            p.y += p.vy;
+            p.alpha += p.dAlpha;
+            if (p.alpha > 0.85 || p.alpha < 0.12) p.dAlpha *= -1;
+            if (p.y < -10) p.y = height + 10;
+            if (p.x < -10) p.x = width + 10;
+            if (p.x > width + 10) p.x = -10;
+
+            ctx.beginPath();
+            ctx.arc(p.x, p.y, p.r, 0, Math.PI * 2);
+            ctx.fillStyle = p.color + p.alpha + ')';
+            ctx.fill();
+          }
+        }
+        requestAnimationFrame(animate);
+      }
+      animate();
+    })();
+  </script>
+</body>
 </html>
