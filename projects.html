@@ -10,204 +10,201 @@
 </head>
 <body>
 
-  <canvas id="firefly-canvas"></canvas>
-  <div class="ambient-orb orb-emerald"></div>
-  <div class="ambient-orb orb-azalea"></div>
-
-  <header class="navbar">
-    <nav class="nav-inner">
+  <header class="site-header">
+    <nav class="nav-container">
       <a href="index.html" class="brand">
-        <img src="Nurture_icon.png" alt="Nurture Blossom Logo">
-        <span>Skylar Bleau<span class="brand-dot">.</span></span>
+        <img src="Nurture_icon.png" alt="Skylar Bleau Logo" width="32" height="32">
+        <span>Skylar Bleau</span>
+        <span class="brand-meta">B.S. CS &amp; M.Eng. AI</span>
       </a>
       <ul class="nav-links">
         <li><a href="index.html" class="nav-link">About &amp; Experience</a></li>
         <li><a href="projects.html" class="nav-link active">Projects</a></li>
-        <li><a href="contact.html" class="nav-link">Socials &amp; Contact</a></li>
+        <li><a href="contact.html" class="nav-link">Contact</a></li>
       </ul>
     </nav>
   </header>
 
-  <main class="container">
-    <div class="section-header reveal" style="text-align: center; max-width: 740px; margin: 24px auto 56px;">
-      <span class="eyebrow"><i class="fa-solid fa-code-branch"></i> Portfolio Showcase</span>
-      <h1 class="section-title">Communities, Bots &amp; <span class="gradient-text">Full-Stack Platforms</span></h1>
-      <p style="color: var(--text-muted); margin-top: 12px;">
-        From full-stack web directories on <strong>nurture.how</strong> to custom-engineered Discord automation with <strong>Azalea</strong>.
-      </p>
+  <!-- Subpage Meadow Banner -->
+  <section class="meadow-banner subpage-banner">
+    <div class="hero-inner" style="grid-template-columns: 1fr; padding: 56px 24px 68px;">
+      <div>
+        <span class="kicker"><i class="fa-solid fa-code"></i> Software Engineering &amp; Architecture</span>
+        <h1 class="hero-title">Production Projects &amp; Platforms</h1>
+        <p class="hero-lead" style="margin-bottom: 0;">
+          Full-stack web applications, relational database systems, automated web scrapers, and community infrastructure built for over 1,500 active users.
+        </p>
+      </div>
     </div>
+    <svg class="pine-divider" viewBox="0 0 1440 48" fill="none" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0 48L1440 48L1440 18C1280 38 1060 6 840 24C620 42 340 8 0 28L0 48Z" fill="#0a110d"/>
+    </svg>
+  </section>
 
-    <!-- PROJECT 1: NURTURE.HOW WEB PLATFORM -->
-    <section class="glass-card project-showcase reveal">
-      <div class="project-media">
-        <a href="https://nurture.how" target="_blank" rel="noopener">
-          <img src="Nurture_icon.png" alt="nurture.how Icon" class="project-avatar">
+  <main class="container">
+
+    <!-- PROJECT 1: NURTURE.HOW -->
+    <section class="card project-row reveal">
+      <div class="project-media-box">
+        <img src="Nurture_icon.png" alt="nurture.how Platform" class="project-thumb" width="180" height="180">
+        <a href="https://nurture.how" target="_blank" rel="noopener" class="btn btn-primary" style="width: 100%; justify-content: center;">
+          <i class="fa-solid fa-arrow-up-right-from-square"></i> Visit nurture.how
         </a>
-        <div class="btn-group">
-          <a href="https://nurture.how" target="_blank" rel="noopener" class="btn btn-primary">
-            <i class="fa-solid fa-globe"></i> Visit nurture.how
-          </a>
-        </div>
       </div>
 
       <div>
-        <span class="date-pill">Launched 2026 • Full-Stack Web Hub</span>
-        <h2 class="role-title" style="font-size: 1.85rem; margin: 10px 0;">
-          <a href="https://nurture.how" target="_blank" rel="noopener" class="gradient-text">nurture.how</a> — Gaming Directory &amp; Guide Platform
-        </h2>
-        <p style="color: var(--text-muted); margin-bottom: 16px;">
-          Designed and deployed <strong>nurture.how</strong> as the central web companion to the Nurture ecosystem. Built for speed and clean navigation, it hosts curated game directories, character build guides, and community resources.
+        <div class="exp-header">
+          <div>
+            <h2 class="exp-role" style="font-size: 1.45rem;">nurture.how — Web Platform &amp; Game Directory</h2>
+            <span class="exp-org">Full-Stack Web Development &amp; Cloud Deployment</span>
+          </div>
+          <span class="exp-date">August 2026 – Present</span>
+        </div>
+        <p style="color: var(--text-body); margin-bottom: 14px;">
+          Designed, built, and deployed <strong>nurture.how</strong> to serve as a centralized web platform for game directories, character builds, and community documentation.
         </p>
-        <ul class="bullet-list">
-          <li>Engineered responsive front-end layouts with modern web standards and automated CI/CD deployments via GitHub and Vercel.</li>
-          <li>Bridges web visitors directly with live community tools, theorycrafting guides, and interactive utilities for <em>Honkai: Star Rail</em>, <em>Cookie Run: Kingdom</em>, and sandbox RPGs.</li>
+        <ul class="clean-list">
+          <li>Built responsive, fast-loading front-end interfaces with automated continuous deployment via GitHub and Vercel.</li>
+          <li>Structured game guide directories for <em>Honkai: Star Rail</em>, <em>Cookie Run: Kingdom</em>, and multiplayer sandbox titles to complement Discord bot automation.</li>
         </ul>
-        <div class="tag-row">
-          <span class="tech-tag">JavaScript / Node.js</span>
-          <span class="tech-tag">HTML5 &amp; CSS3</span>
-          <span class="tech-tag">Vercel CI/CD</span>
-          <span class="tech-tag">Full-Stack Architecture</span>
+        <div class="tag-list">
+          <span class="tag">HTML5 &amp; CSS3</span>
+          <span class="tag">JavaScript</span>
+          <span class="tag">Node.js</span>
+          <span class="tag">Vercel CI/CD</span>
         </div>
       </div>
     </section>
 
-    <!-- PROJECT 2: AZALEA DISCORD BOT OVERVIEW -->
-    <section id="azalea" class="glass-card project-showcase reverse reveal">
-      <div>
-        <span class="date-pill">June 2022 – Present • Co-Architected Full-Stack Bot</span>
-        <h2 class="role-title" style="font-size: 1.85rem; margin: 10px 0; color: var(--azalea-lavender);">
-          Azalea — Nurture's Custom Discord Bot
-        </h2>
-        <p style="color: var(--text-muted); margin-bottom: 16px;">
-          Azalea brings interactive knowledge and entertainment to over 1,500 players. Users can look up real-time character builds for <em>Cookie Run: Kingdom</em> and <em>Honkai: Star Rail</em>, roll custom gacha pulls to collect characters, and track persistent inventories.
-        </p>
-        <ul class="bullet-list">
-          <li>Pioneered a dynamic visualizer powered by automated HTML web-scraping and asynchronous JavaScript requests to generate up-to-date character guides on demand.</li>
-          <li>Co-architected (with Thomas Griffin, UCF) a resilient Python backend integrated with a relational SQL database to manage user inventories, currency economies, and gacha collection states.</li>
-        </ul>
-        <div class="tag-row">
-          <span class="tech-tag lavender">Python</span>
-          <span class="tech-tag lavender">SQL Database</span>
-          <span class="tech-tag lavender">JavaScript (Async)</span>
-          <span class="tech-tag lavender">HTML Web Scraping</span>
-          <span class="tech-tag lavender">Discord API</span>
-        </div>
+    <!-- PROJECT 2: AZALEA DISCORD BOT -->
+    <section class="card project-row reveal">
+      <div class="project-media-box">
+        <a href="https://www.instagram.com/chizu_rii/" target="_blank" rel="noopener" title="Art by @chizu_rii">
+          <img src="Azalea.PNG" alt="Azalea Bot Avatar" class="project-thumb" width="180" height="180">
+        </a>
+        <span style="font-size: 0.76rem; color: var(--text-muted);">Artwork credit: @chizu_rii</span>
       </div>
 
-      <div class="project-media">
-        <a href="https://www.instagram.com/chizu_rii/" target="_blank" rel="noopener" title="Artwork by @chizu_rii">
-          <img src="Azalea.PNG" alt="Azalea Discord Bot" class="project-avatar" style="border-color: rgba(196, 181, 253, 0.5);">
-        </a>
-        <span style="font-size: 0.82rem; color: var(--text-muted);">Character art credit: @chizu_rii</span>
+      <div>
+        <div class="exp-header">
+          <div>
+            <h2 class="exp-role" style="font-size: 1.45rem;">Azalea — Full-Stack Discord Bot</h2>
+            <span class="exp-org">Python • SQL • Asynchronous JavaScript • HTML Web Scraping</span>
+          </div>
+          <span class="exp-date">June 2022 – Present</span>
+        </div>
+        <p style="color: var(--text-body); margin-bottom: 14px;">
+          Azalea is a custom utility and entertainment bot serving the Nurture community. Users can query character builds for <em>Cookie Run: Kingdom</em> and <em>Honkai: Star Rail</em>, simulate gacha pulls, and manage persistent inventories.
+        </p>
+        <ul class="clean-list">
+          <li>Pioneered a dynamic data visualizer utilizing HTML web-scraping to aggregate and display real-time game statistics and character build recommendations.</li>
+          <li>Co-architected (with Thomas Griffin, University of Central Florida) a full-stack Python bot backed by a relational SQL database for user inventories, alongside asynchronous JavaScript requests.</li>
+        </ul>
+        <div class="tag-list">
+          <span class="tag">Python</span>
+          <span class="tag">SQL Database</span>
+          <span class="tag">JavaScript (Async)</span>
+          <span class="tag">HTML Web Scraping</span>
+          <span class="tag">Discord API</span>
+        </div>
       </div>
     </section>
 
-    <!-- INTERACTIVE AZALEA SLASH-COMMAND TERMINAL -->
-    <section class="glass-card simulator-card reveal" aria-label="Azalea Interactive Command Previewer">
-      <div class="sim-topbar">
-        <div class="sim-channel">
-          <i class="fa-solid fa-hashtag"></i>
-          <span>azalea-bot-sandbox</span>
-          <span style="color: var(--text-muted); font-size: 0.8rem;">| Interactive Live Preview</span>
+    <!-- INTERACTIVE AZALEA COMMAND SANDBOX -->
+    <section id="azalea-bot-sandbox" class="sandbox-wrapper reveal">
+      <div class="sandbox-header">
+        <div class="sandbox-title">
+          <i class="fa-solid fa-terminal" style="color: var(--meadow-green);"></i>
+          <span>Azalea Command Sandbox — Interactive Preview</span>
         </div>
-        <div class="sim-status">
-          <span class="status-dot"></span>
-          <span id="sim-version-badge">Azalea Engine v4.2 • SQL Connected</span>
+        <div class="sandbox-badge">
+          <span class="status-indicator"></span>
+          <span>SQL &amp; Scraper Modules Active</span>
         </div>
       </div>
 
-      <div class="sim-body">
-        <!-- Left Sidebar: Category Filters & Dynamic Command List -->
-        <aside class="sim-sidebar">
-          <div class="sim-filter-row" id="sim-category-filters"></div>
-          <div class="sim-cmd-list" id="sim-command-list"></div>
+      <div class="sandbox-grid">
+        <aside class="sandbox-sidebar">
+          <div class="filter-tabs" id="sim-category-filters"></div>
+          <div class="cmd-list" id="sim-command-list"></div>
         </aside>
 
-        <!-- Right Viewport: Simulated Discord Output & Slash Input -->
-        <div class="sim-viewport">
-          <div class="sim-message-area" id="sim-output"></div>
+        <div class="sandbox-main">
+          <div id="sim-output"></div>
 
-          <form class="sim-input-bar" id="sim-form" autocomplete="off">
-            <i class="fa-solid fa-terminal" style="color: var(--azalea-lavender);"></i>
-            <input 
-              type="text" 
-              id="sim-input" 
-              placeholder="Type a slash command (e.g., /gacha, /hsr, /crk, /inventory) and press Enter..."
+          <form class="sandbox-input-form" id="sim-form" autocomplete="off">
+            <i class="fa-solid fa-chevron-right" style="color: var(--meadow-green); font-size: 0.8rem;"></i>
+            <input
+              type="text"
+              id="sim-input"
+              placeholder="Type a command (/crk, /hsr, /gacha, /inventory, /status) and press Enter..."
             >
-            <button type="submit" class="sim-action-btn">Run</button>
+            <button type="submit" class="sandbox-btn">Execute</button>
           </form>
         </div>
       </div>
     </section>
 
-    <!-- PROJECT 3: NURTURE DISCORD COMMUNITY + LIVE WIDGET -->
-    <section class="glass-card project-showcase reveal">
-      <div class="project-media">
-        <iframe 
-          class="discord-frame"
-          src="https://discord.com/widget?id=996903185685946490&theme=dark" 
-          allowtransparency="true" 
-          frameborder="0" 
+    <!-- PROJECT 3: NURTURE COMMUNITY & LIVE DISCORD WIDGET -->
+    <section class="card project-row reveal">
+      <div class="project-media-box" style="padding: 10px;">
+        <iframe
+          class="discord-widget-frame"
+          src="https://discord.com/widget?id=996903185685946490&theme=dark"
+          allowtransparency="true"
+          frameborder="0"
           sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"
           loading="lazy"
-          title="Nurture Discord Server Widget">
+          title="Nurture Discord Server">
         </iframe>
       </div>
 
       <div>
-        <span class="date-pill">1,500+ Members • 9-Person Volunteer Staff</span>
-        <h2 class="role-title" style="font-size: 1.85rem; margin: 10px 0;">
-          <a href="https://discord.gg/nurture" target="_blank" rel="noopener" style="color: var(--nurture-mint);">Nurture</a> — A Community Helping Gamers Grow
-        </h2>
-        <p style="color: var(--text-muted); margin-bottom: 16px;">
-          Founded in 2022, Nurture is a welcoming, high-engagement gaming community centered around 
-          <a href="https://www.cookierun-kingdom.com/en/" target="_blank" rel="noopener" style="color: var(--sunlight-gold); text-decoration: underline;">Cookie Run: Kingdom</a> and 
-          <a href="https://hsr.hoyoverse.com/en-us/" target="_blank" rel="noopener" style="color: var(--azalea-lavender); text-decoration: underline;">Honkai: Star Rail</a>.
+        <div class="exp-header">
+          <div>
+            <h2 class="exp-role" style="font-size: 1.45rem;">Nurture — Gaming Community Infrastructure</h2>
+            <span class="exp-org">Community Management &amp; Operations (1,500+ Members)</span>
+          </div>
+          <span class="exp-date">June 2022 – Present</span>
+        </div>
+        <p style="color: var(--text-body); margin-bottom: 14px;">
+          Nurture is a 1,500+ member gaming community focused on player progression, technical guides, and collaborative events for <a href="https://www.cookierun-kingdom.com/en/" target="_blank" rel="noopener" style="color: var(--meadow-light); text-decoration: underline;">Cookie Run: Kingdom</a> and <a href="https://hsr.hoyoverse.com/en-us/" target="_blank" rel="noopener" style="color: var(--meadow-light); text-decoration: underline;">Honkai: Star Rail</a>.
         </p>
-        <ul class="bullet-list">
-          <li>Directing a 9-person volunteer staff (5 moderators, 4 support specialists) to oversee community events, moderation, and personalized player coaching.</li>
-          <li>Features custom automated onboarding, live voice hangouts, game news feeds, giveaways, and direct integration with <strong>Azalea</strong> and <strong>nurture.how</strong>.</li>
+        <ul class="clean-list">
+          <li>Directing a 9-person volunteer staff (5 moderators, 4 support team members) responsible for community moderation, technical support tickets, and event coordination.</li>
+          <li>Integrated custom bot automation (Azalea) and web documentation (<a href="https://nurture.how" target="_blank" rel="noopener" style="color: var(--meadow-light);">nurture.how</a>) to streamline player onboarding and guide lookups.</li>
         </ul>
-        <div class="btn-group" style="margin-top: 22px;">
+        <div class="btn-row" style="margin-top: 20px;">
           <a href="https://discord.gg/nurture" target="_blank" rel="noopener" class="btn btn-primary">
             <i class="fa-brands fa-discord"></i> Join discord.gg/nurture
           </a>
         </div>
       </div>
     </section>
+
   </main>
 
   <footer class="site-footer">
-    <p>© 2026 Skylar Bleau • <a href="https://nurture.how" style="color: var(--emerald-glow);">nurture.how</a> • <a href="https://discord.gg/nurture" style="color: var(--azalea-lavender);">discord.gg/nurture</a></p>
+    <p>© 2026 Skylar David Bleau • <a href="https://nurture.how" style="color: var(--meadow-light);">nurture.how</a> • <a href="https://discord.gg/nurture" style="color: var(--meadow-light);">discord.gg/nurture</a></p>
   </footer>
 
-  <!-- ========================================================================
-       FUTURE-PROOF AZALEA COMMAND ENGINE + FIREFLY CANVAS
-       ======================================================================== -->
   <script>
     (() => {
-      /**
-       * FUTURE-PROOF CONFIGURATION:
-       * 1. To add a new command locally, simply add an entry to AZALEA_REGISTRY below.
-       * 2. Optional: Set REMOTE_COMMANDS_URL to a JSON file hosted on nurture.how
-       *    (e.g., 'https://nurture.how/api/azalea-commands.json') to update commands
-       *    automatically without touching this repository!
-       */
+      // Future-Proof Command Registry: Add new objects here or fetch from REMOTE_COMMANDS_URL
       const REMOTE_COMMANDS_URL = null;
 
-      // Simulated session SQL state so /gacha pulls dynamically persist in /inventory
       const sessionInventory = [
+        { name: 'Wind Archer Cookie', rarity: 'Legendary', count: 2 },
         { name: 'Shadow Milk Cookie', rarity: 'Beast', count: 1 },
-        { name: 'Mystic Flour Cookie', rarity: 'Beast', count: 1 },
-        { name: 'Wind Archer Cookie', rarity: 'Legendary', count: 2 }
+        { name: 'Mystic Flour Cookie', rarity: 'Beast', count: 1 }
       ];
 
       const gachaPool = [
-        { name: 'Burning Spice Cookie', rarity: 'Beast (0.25%)', color: '#f43f5e', note: 'SQL Inventory Updated (+1 Soulstone Core)' },
-        { name: 'Awakened Dark Cacao Cookie', rarity: 'Ancient+ (0.6%)', color: '#c4b5fd', note: 'SQL Inventory Updated (+20 Soulprisms)' },
-        { name: 'Moonlight Cookie', rarity: 'Legendary (1.2%)', color: '#fcd34d', note: 'SQL Inventory Updated (+1 Character)' },
-        { name: 'Crème Brûlée Cookie', rarity: 'Epic (4.5%)', color: '#6ee7b7', note: 'SQL Inventory Updated (+1 Character)' },
-        { name: 'Financier Cookie', rarity: 'Epic (4.5%)', color: '#6ee7b7', note: 'SQL Inventory Updated (+1 Character)' }
+        { name: 'Burning Spice Cookie', rarity: 'Beast (0.25%)', note: 'INSERT INTO user_inventory (+1 Unit)' },
+        { name: 'Awakened Dark Cacao Cookie', rarity: 'Ancient+ (0.60%)', note: 'UPDATE user_inventory SET soulprisms = soulprisms + 20' },
+        { name: 'Moonlight Cookie', rarity: 'Legendary (1.20%)', note: 'INSERT INTO user_inventory (+1 Unit)' },
+        { name: 'Crème Brûlée Cookie', rarity: 'Epic (4.50%)', note: 'UPDATE user_inventory SET count = count + 1' },
+        { name: 'Financier Cookie', rarity: 'Epic (4.50%)', note: 'UPDATE user_inventory SET count = count + 1' }
       ];
 
       let AZALEA_REGISTRY = [
@@ -216,107 +213,101 @@
           command: '/crk build',
           args: 'cookie: Wind Archer',
           category: 'Guides',
-          description: 'Scrapes & visualizes optimal CRK toppings & beascuits',
+          description: 'Scrapes & displays optimal CRK toppings and beascuits',
           render: () => ({
-            title: '🏹 Wind Archer Cookie — Live Visualizer Guide',
-            color: '#6ee7b7',
-            desc: 'Data scraped & compiled via Azalea HTML/JS pipeline + nurture.how guide database.',
+            title: 'Wind Archer Cookie — Build & Topping Visualizer',
+            desc: 'Data compiled via Azalea HTML/JS web scraper and nurture.how guide database.',
             fields: [
-              { name: 'Best Toppings', value: '5x Searing Raspberry (ATK) or 5x Swift Chocolate' },
-              { name: 'Legendary Beascuit', value: '4x Wind DMG Bypass (25%+)' },
-              { name: 'Arena Meta Tier', value: 'SS+ ( Core Single-Target DPS )' },
-              { name: 'Data Source', value: 'Auto-Scraped & Verified' }
+              { name: 'Recommended Toppings', value: '5x Searing Raspberry (ATK) or 5x Swift Chocolate' },
+              { name: 'Beascuit Substats', value: '4x Wind DMG Bypass (25%+)' },
+              { name: 'Primary Mode', value: 'Kingdom Arena & Guild Battle' },
+              { name: 'Scraper Status', value: 'Verified & Cached' }
             ],
-            footer: 'Azalea Visualizer • Powered by Python & HTML Web-Scraping'
+            footer: 'Azalea Visualizer • Python + HTML Web Scraping'
           })
         },
         {
           id: 'hsr-guide',
           command: '/hsr character',
-          args: 'unit: Trailblazer / DPS',
+          args: 'unit: Optimal Relic Setup',
           category: 'Guides',
-          description: 'Looks up Honkai: Star Rail relics, light cones & speed tuning',
+          description: 'Queries Honkai: Star Rail relics, planar sets & speed thresholds',
           render: () => ({
-            title: '🚄 Honkai: Star Rail — Character Build Lookup',
-            color: '#c4b5fd',
-            desc: 'Real-time relic stat thresholds, planar ornaments, and team synergies.',
+            title: 'Honkai: Star Rail — Character Build Specification',
+            desc: 'Relic set optimizations, speed breakpoints, and main/substat priorities.',
             fields: [
-              { name: 'Best Relic Set', value: '4pc Iron Cavalry / 4pc Scholar Lost in Erudition' },
-              { name: 'Speed Breakpoint', value: '134 / 160.1 SPD (MoC 12 Optimized)' },
-              { name: 'Priority Substats', value: 'CRIT Rate / CRIT DMG > SPD > ATK%' },
-              { name: 'Companion Guide', value: 'Synced with nurture.how/hsr' }
+              { name: '4pc Relic Set', value: 'Scholar Lost in Erudition / Iron Cavalry' },
+              { name: 'Speed Breakpoint', value: '134 SPD (2 Actions Cycle 0) / 160.1 SPD' },
+              { name: 'Substat Priority', value: 'CRIT Rate & CRIT DMG > SPD > ATK%' },
+              { name: 'Web Reference', value: 'Synced with nurture.how' }
             ],
-            footer: 'Azalea HSR Module • Async JS + Python Pipeline'
+            footer: 'Azalea HSR Module • Async JS + Python Backend'
           })
         },
         {
           id: 'gacha-pull',
           command: '/gacha pull',
-          args: 'banner: Kingdom Standard',
+          args: 'banner: Standard',
           category: 'Gacha & SQL',
-          description: 'Roll a live Cookie Run: Kingdom gacha pull & save to SQL',
-          actionLabel: '🎲 Roll Another Pull',
+          description: 'Simulates a gacha pull and commits the result to SQL inventory',
+          actionLabel: 'Run /gacha pull Again',
           render: () => {
             const pull = gachaPool[Math.floor(Math.random() * gachaPool.length)];
-            const existing = sessionInventory.find(item => item.name === pull.name);
+            const existing = sessionInventory.find(i => i.name === pull.name);
             if (existing) {
               existing.count += 1;
             } else {
               sessionInventory.unshift({ name: pull.name, rarity: pull.rarity.split(' ')[0], count: 1 });
             }
             return {
-              title: `✨ Gacha Pull Result: ${pull.name}!`,
-              color: pull.color,
-              desc: 'Youoven-baked a fresh Cookie! Check `/inventory` to see your updated SQL collection.',
+              title: `Gacha Pull Result: ${pull.name}`,
+              desc: 'Simulated gacha roll executed. Select /inventory view to inspect updated SQL records.',
               fields: [
-                { name: 'Character Pulled', value: pull.name },
-                { name: 'Rarity Tier', value: pull.rarity },
-                { name: 'Database Transaction', value: pull.note },
-                { name: 'Session Total Unique', value: `${sessionInventory.length} Cookies Collected` }
+                { name: 'Unit Acquired', value: pull.name },
+                { name: 'Probability Tier', value: pull.rarity },
+                { name: 'SQL Query Executed', value: pull.note },
+                { name: 'Total Unique Units', value: `${sessionInventory.length} Units in Session DB` }
               ],
-              footer: 'Azalea Gacha Engine • Persistent SQL Inventory Commit'
+              footer: 'Azalea Gacha Engine • SQL Transaction Committed'
             };
           }
         },
         {
           id: 'inventory',
           command: '/inventory view',
-          args: 'user: @Skylar',
+          args: 'user: Skylar',
           category: 'Gacha & SQL',
-          description: 'Queries the relational SQL database for user collection',
+          description: 'Queries the relational SQL database for user inventory records',
           render: () => ({
-            title: '🗄️ @Skylar\'s SQL Cookie Inventory',
-            color: '#fcd34d',
-            desc: 'Live query from `SELECT cookie_name, rarity, count FROM user_inventory WHERE user_id = ?`',
-            fields: sessionInventory.slice(0, 6).map(item => ({
+            title: 'SQL Database Inventory — User: Skylar',
+            desc: 'Result of: SELECT unit_name, rarity, count FROM user_inventory WHERE user_id = 1',
+            fields: sessionInventory.slice(0, 4).map(item => ({
               name: `${item.rarity} Tier`,
-              value: `${item.name} (x${item.count})`
+              value: `${item.name} (Qty: ${item.count})`
             })),
-            footer: `Total Unique Entries: ${sessionInventory.length} • Roll /gacha to add more!`
+            footer: `Displaying ${Math.min(4, sessionInventory.length)} of ${sessionInventory.length} records`
           })
         },
         {
-          id: 'architecture',
+          id: 'status',
           command: '/azalea status',
-          args: '--diagnostics',
+          args: '--system',
           category: 'System',
-          description: 'Displays bot tech stack, scraper latency & server stats',
+          description: 'Outputs bot architecture, runtime stack, and community metrics',
           render: () => ({
-            title: '🌸 Azalea System Diagnostics & Architecture',
-            color: '#a0e9b2',
-            desc: 'Co-architected by Skylar Bleau & Thomas Griffin to serve the 1,500+ member Nurture community.',
+            title: 'Azalea System Architecture & Status',
+            desc: 'Co-architected by Skylar Bleau and Thomas Griffin for the Nurture Discord server.',
             fields: [
-              { name: 'Core Runtime', value: 'Python 3 + Discord API' },
-              { name: 'Storage Layer', value: 'Relational SQL Database' },
-              { name: 'Ingestion Pipeline', value: 'Async JavaScript + HTML Web Scraping' },
-              { name: 'Web Companion', value: 'https://nurture.how' }
+              { name: 'Backend Runtime', value: 'Python 3 + Discord.py API' },
+              { name: 'Database Engine', value: 'Relational SQL (User Inventories)' },
+              { name: 'Data Ingestion', value: 'Async JavaScript + HTML Web Scraping' },
+              { name: 'Active Community', value: '1,500+ Members (discord.gg/nurture)' }
             ],
-            footer: 'Uptime: 99.9% • Serving 1,500+ Members in discord.gg/nurture'
+            footer: 'Status: Online • Connected to nurture.how'
           })
         }
       ];
 
-      // DOM Elements
       const categoryContainer = document.getElementById('sim-category-filters');
       const commandListContainer = document.getElementById('sim-command-list');
       const outputContainer = document.getElementById('sim-output');
@@ -326,18 +317,13 @@
       let activeCategory = 'All';
       let activeCommandId = AZALEA_REGISTRY[0].id;
 
-      function getCategories() {
-        const cats = new Set(['All']);
-        AZALEA_REGISTRY.forEach(cmd => cats.add(cmd.category));
-        return Array.from(cats);
-      }
-
       function renderFilters() {
+        const categories = ['All', ...new Set(AZALEA_REGISTRY.map(c => c.category))];
         categoryContainer.innerHTML = '';
-        getCategories().forEach(cat => {
+        categories.forEach(cat => {
           const btn = document.createElement('button');
           btn.type = 'button';
-          btn.className = `sim-filter-btn ${cat === activeCategory ? 'active' : ''}`;
+          btn.className = `filter-tab ${cat === activeCategory ? 'active' : ''}`;
           btn.textContent = cat;
           btn.addEventListener('click', () => {
             activeCategory = cat;
@@ -350,17 +336,17 @@
 
       function renderCommandList() {
         commandListContainer.innerHTML = '';
-        const filtered = activeCategory === 'All'
+        const list = activeCategory === 'All'
           ? AZALEA_REGISTRY
           : AZALEA_REGISTRY.filter(c => c.category === activeCategory);
 
-        filtered.forEach(cmd => {
+        list.forEach(cmd => {
           const btn = document.createElement('button');
           btn.type = 'button';
-          btn.className = `sim-cmd-btn ${cmd.id === activeCommandId ? 'active' : ''}`;
+          btn.className = `cmd-item-btn ${cmd.id === activeCommandId ? 'active' : ''}`;
           btn.innerHTML = `
-            <span class="sim-cmd-name">${cmd.command}</span>
-            <span class="sim-cmd-desc">${cmd.description}</span>
+            <span class="cmd-item-name">${cmd.command}</span>
+            <span class="cmd-item-desc">${cmd.description}</span>
           `;
           btn.addEventListener('click', () => executeCommand(cmd.id));
           commandListContainer.appendChild(btn);
@@ -373,71 +359,60 @@
         renderCommandList();
 
         const embed = typeof cmd.render === 'function' ? cmd.render() : cmd.embed;
-
         const fieldsHtml = (embed.fields || []).map(f => `
-          <div class="embed-field">
-            <span class="field-name">${f.name}</span>
-            <span class="field-value">${f.value}</span>
+          <div class="bot-field">
+            <span class="bot-field-label">${f.name}</span>
+            <span class="bot-field-val">${f.value}</span>
           </div>
         `).join('');
 
-        const actionBtnHtml = cmd.actionLabel
-          ? `<button type="button" class="sim-action-btn" id="sim-rerun-btn">${cmd.actionLabel}</button>`
+        const actionBtn = cmd.actionLabel
+          ? `<button type="button" class="sandbox-btn" id="sim-rerun">${cmd.actionLabel}</button>`
           : '';
 
         outputContainer.innerHTML = `
-          <div class="discord-msg">
-            <img src="Azalea.PNG" alt="Azalea Bot Avatar" class="discord-avatar">
-            <div class="discord-content">
-              <div class="discord-header">
-                <span class="discord-username">Azalea</span>
-                <span class="bot-tag">APP</span>
-                <span class="slash-pill">used ${cmd.command} ${cmd.args || ''}</span>
+          <div class="bot-msg-row">
+            <img src="Azalea.PNG" alt="Azalea" class="bot-avatar" width="42" height="42">
+            <div class="bot-msg-body">
+              <div class="bot-msg-meta">
+                <span class="bot-name">Azalea</span>
+                <span class="bot-badge">BOT</span>
+                <span class="bot-cmd-pill">${cmd.command} ${cmd.args || ''}</span>
               </div>
-              <div class="discord-embed" style="border-left-color: ${embed.color || '#c4b5fd'};">
-                <div class="embed-title">${embed.title}</div>
-                <div class="embed-desc">${embed.desc}</div>
-                <div class="embed-fields">${fieldsHtml}</div>
-                <div class="embed-footer">
+              <div class="bot-embed-box">
+                <div class="bot-embed-title">${embed.title}</div>
+                <div class="bot-embed-desc">${embed.desc}</div>
+                <div class="bot-embed-grid">${fieldsHtml}</div>
+                <div class="bot-embed-footer">
                   <span>${embed.footer}</span>
-                  ${actionBtnHtml}
+                  ${actionBtn}
                 </div>
               </div>
             </div>
           </div>
         `;
 
-        const rerunBtn = document.getElementById('sim-rerun-btn');
-        if (rerunBtn) {
-          rerunBtn.addEventListener('click', () => executeCommand(cmd.id));
-        }
+        const rerun = document.getElementById('sim-rerun');
+        if (rerun) rerun.addEventListener('click', () => executeCommand(cmd.id));
       }
 
-      // Allow typing slash commands in the input bar
       form.addEventListener('submit', (e) => {
         e.preventDefault();
-        const query = input.value.trim().toLowerCase();
-        if (!query) return;
+        const q = input.value.trim().toLowerCase();
+        if (!q) return;
         const match = AZALEA_REGISTRY.find(c =>
-          c.command.toLowerCase().includes(query) ||
-          c.id.toLowerCase().includes(query) ||
-          c.category.toLowerCase().includes(query)
+          c.command.toLowerCase().includes(q) || c.id.toLowerCase().includes(q)
         );
-        if (match) {
-          executeCommand(match.id);
-        } else {
-          executeCommand('gacha-pull');
-        }
+        executeCommand(match ? match.id : 'gacha-pull');
         input.value = '';
       });
 
-      // Optional Remote JSON Sync for Zero-Code Future Updates
       if (REMOTE_COMMANDS_URL) {
         fetch(REMOTE_COMMANDS_URL)
-          .then(res => res.json())
-          .then(remoteCmds => {
-            if (Array.isArray(remoteCmds) && remoteCmds.length) {
-              AZALEA_REGISTRY = remoteCmds;
+          .then(r => r.json())
+          .then(data => {
+            if (Array.isArray(data) && data.length) {
+              AZALEA_REGISTRY = data;
               renderFilters();
               renderCommandList();
               executeCommand(AZALEA_REGISTRY[0].id);
@@ -446,12 +421,10 @@
           .catch(() => {});
       }
 
-      // Initialize Simulator
       renderFilters();
       renderCommandList();
       executeCommand(AZALEA_REGISTRY[0].id);
 
-      // Scroll Reveal Observer
       const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
           if (entry.isIntersecting) {
@@ -459,50 +432,8 @@
             observer.unobserve(entry.target);
           }
         });
-      }, { threshold: 0.1 });
+      }, { threshold: 0.08 });
       document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
-
-      // GPU-Friendly Firefly Canvas
-      const canvas = document.getElementById('firefly-canvas');
-      const ctx = canvas.getContext('2d');
-      let width, height, particles = [];
-      function resize() {
-        width = canvas.width = window.innerWidth;
-        height = canvas.height = window.innerHeight;
-      }
-      window.addEventListener('resize', resize, { passive: true });
-      resize();
-
-      const colors = ['rgba(110, 231, 183, ', 'rgba(196, 181, 253, '];
-      for (let i = 0; i < 28; i++) {
-        particles.push({
-          x: Math.random() * width,
-          y: Math.random() * height,
-          r: Math.random() * 2.2 + 1,
-          vx: (Math.random() - 0.5) * 0.3,
-          vy: -Math.random() * 0.4 - 0.1,
-          alpha: Math.random() * 0.6 + 0.2,
-          color: colors[i % colors.length]
-        });
-      }
-      function animate() {
-        if (!document.hidden) {
-          ctx.clearRect(0, 0, width, height);
-          for (const p of particles) {
-            p.x += p.vx;
-            p.y += p.vy;
-            if (p.y < -10) p.y = height + 10;
-            if (p.x < -10) p.x = width + 10;
-            if (p.x > width + 10) p.x = -10;
-            ctx.beginPath();
-            ctx.arc(p.x, p.y, p.r, 0, Math.PI * 2);
-            ctx.fillStyle = p.color + p.alpha + ')';
-            ctx.fill();
-          }
-        }
-        requestAnimationFrame(animate);
-      }
-      animate();
     })();
   </script>
 </body>
